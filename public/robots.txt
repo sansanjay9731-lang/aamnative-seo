@@ -1,0 +1,8 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://aamnative.com/sitemap.xml
+
+# Disallow admin/api routes (if added later)
+Disallow: /api/
+Disallow: /_next/
