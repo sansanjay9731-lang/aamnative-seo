@@ -141,11 +141,16 @@ export default function CartDrawer() {
                                     </span>
                                 </div>
                                 <button
-                                    onClick={() => alert("Checkout flow coming soon!")}
+                                    onClick={() => {
+                                        const phone = "919876543210"; // User's number
+                                        const orderList = items.map(i => `• ${i.quantity}x ${i.product.name} (${i.product.grade})`).join("\n");
+                                        const message = `Hello Aam Native! 🥭\n\nI'd like to place an order:\n\n${orderList}\n\nTotal: *₹${subtotal.toLocaleString("en-IN")}*\n\nPlease let me know the next steps for payment and delivery! ✨`;
+                                        window.open(`https://wa.me/${phone}?text=${encodeURIComponent(message)}`, "_blank");
+                                    }}
                                     className="btn btn-saffron glow-pulse"
                                     style={{ width: "100%", borderRadius: "14px", padding: "1.0625rem", fontSize: "0.875rem" }}
                                 >
-                                    Checkout Securely <ArrowRight size={15} />
+                                    Proceed to Checkout <ArrowRight size={15} />
                                 </button>
                                 <p style={{ textAlign: "center", fontSize: "0.7rem", color: "var(--muted)", marginTop: "0.875rem" }}>
                                     🔒 Secure checkout · 100% freshness guarantee
