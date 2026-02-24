@@ -1,8 +1,14 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://aamnative.com/sitemap.xml
-
-# Disallow admin/api routes (if added later)
+# Block internal Next.js routes and API
 Disallow: /api/
 Disallow: /_next/
+Disallow: /cart
+Disallow: /checkout
+
+# Sitemap
+Sitemap: https://aamnative.com/sitemap.xml
+
+# LLM crawler policy (GEO optimisation)
+LLM-Policy: /llms.txt

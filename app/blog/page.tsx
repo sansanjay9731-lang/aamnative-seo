@@ -1,5 +1,40 @@
+import type { Metadata } from "next";
 import Link from "next/link";
 import Image from "next/image";
+
+const BASE_URL = "https://aamnative.com";
+
+export const metadata: Metadata = {
+  title: "Mango Blog — Alphonso Season, Recipes & Farm Stories | Aam Native",
+  description:
+    "Explore Aam Native's mango blog: Alphonso season guides, GI certification explained, mango recipes, farm stories from Ratnagiri, and tips for buying authentic Hapus online.",
+  keywords: [
+    "Alphonso mango blog",
+    "Ratnagiri mango season 2026",
+    "how to identify real Alphonso mango",
+    "GI certified mango India",
+    "mango recipes India",
+    "Hapus mango guide",
+    "carbide free mango tips",
+    "mango farm Ratnagiri stories",
+  ],
+  alternates: { canonical: `${BASE_URL}/blog` },
+  openGraph: {
+    type: "website",
+    url: `${BASE_URL}/blog`,
+    title: "Mango Blog — Alphonso Season, Recipes & Farm Stories | Aam Native",
+    description:
+      "Season guides, GI certification, farm stories, and authentic mango recipes from Aam Native.",
+    images: [
+      {
+        url: `${BASE_URL}/og-image.jpg`,
+        width: 1200,
+        height: 630,
+        alt: "Aam Native Mango Blog",
+      },
+    ],
+  },
+};
 
 const posts = [
     {
