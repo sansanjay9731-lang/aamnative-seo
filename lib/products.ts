@@ -34,8 +34,8 @@ export const products: Product[] = [
         tagline: "The King of All Mangos. Hand Selected, Farm Fresh.",
         description:
             "Experience the pinnacle of Indian mango culture. Our Premium Rathnagiri Alphonso mangos are hand-selected from the finest trees of Rathnagiri district, Maharashtra, the GI-tagged heartland of the world's most coveted mango. Each piece weighs 250g, bursting with saffron-golden pulp, zero fiber, and a fragrance that fills the room.",
-        price: 1299,
-        originalPrice: 1599,
+        price: 2999,
+        originalPrice: 3499,
         pieces: 12,
         weight: "250g each",
         boxWeight: "3 kg box",
@@ -101,8 +101,8 @@ export const products: Product[] = [
         tagline: "Everyday Sweetness. Farm Fresh, Full Flavour.",
         description:
             "Our Standard grade Rathnagiri Alphonso is still the envy of every other mango variety. 14 premium pieces in a 3kg box, sourced from trusted Rathnagiri orchards. Slightly smaller than our premium selection, but every bit as sweet, aromatic and fiberfree. Perfect for daily enjoyment, mango shakes, aamras and more.",
-        price: 999,
-        originalPrice: 1199,
+        price: 2799,
+        originalPrice: 3199,
         pieces: 14,
         weight: "~214g each",
         boxWeight: "3 kg box",
@@ -160,14 +160,14 @@ export const products: Product[] = [
     },
     {
         id: "3",
-        slug: "rathnagiri-alphonso-medium",
+        slug: "rathnagiri-alphonso-regular",
         name: "Rathnagiri Alphonso Mango",
-        grade: "Medium",
+        grade: "Regular",
         tagline: "More Mangos, Same Taste. Bulk Delight.",
         description:
-            "Get more for less! Our Medium grade Rathnagiri Alphonso brings you 16 pieces in a single 3kg box, making it the ultimate choice for large families, mango lovers who use them for cooking, or anyone who simply wants maximum mango bliss. Same iconic Rathnagiri origin, same fibrefree Alphonso taste.",
-        price: 849,
-        originalPrice: 999,
+            "Get more for less! Our Regular grade Rathnagiri Alphonso brings you 16 pieces in a single 3kg box, making it the ultimate choice for large families, mango lovers who use them for cooking, or anyone who simply wants maximum mango bliss. Same iconic Rathnagiri origin, same fibrefree Alphonso taste.",
+        price: 2699,
+        originalPrice: 2999,
         pieces: 16,
         weight: "~188g each",
         boxWeight: "3 kg box",
@@ -214,7 +214,7 @@ export const products: Product[] = [
         ],
         faqs: [
             { q: "How many people does one box serve?", a: "A 16-piece box is great for 6–8 people for fresh eating, or 4–6 people for cooking purposes." },
-            { q: "Are medium mangos less sweet than premium?", a: "No! The sweetness and aroma is equally authentic. The only difference is size. Medium mangos are slightly smaller." },
+            { q: "Are regular mangos less sweet than premium?", a: "No! The sweetness and aroma is equally authentic. The only difference is size. Regular mangos are slightly smaller." },
             { q: "Can I order multiple boxes?", a: "Absolutely! You can add multiple boxes to your cart. Bulk orders of 3+ boxes get 5% extra discount." },
         ],
         recipes: [

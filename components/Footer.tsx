@@ -16,7 +16,7 @@ function FooterLogo() {
 const shopLinks = [
     { href: "/products/rathnagiri-alphonso-premium", label: "premium box" },
     { href: "/products/rathnagiri-alphonso-standard", label: "standard box" },
-    { href: "/products/rathnagiri-alphonso-medium", label: "medium box" },
+    { href: "/products/rathnagiri-alphonso-regular", label: "regular box" },
 ];
 const infoLinks = [
     { href: "/about", label: "our farm" },
