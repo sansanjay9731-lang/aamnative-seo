@@ -5,9 +5,9 @@ import { products } from "@/lib/products";
 const BASE_URL = "https://aamnative.com";
 
 export const metadata: Metadata = {
-  title: "Buy Ratnagiri Alphonso Mangoes Online — Premium, Standard & Medium Boxes",
+  title: "Buy Ratnagiri Alphonso Mangoes Online — Premium, Standard & Regular Boxes",
   description:
-    "Shop GI-certified Ratnagiri Alphonso (Hapus) mangoes online. Premium (12 pcs · ₹1,299), Standard (14 pcs · ₹999), Medium (16 pcs · ₹849). Farm-direct, naturally ripened, delivered in 24–48 hours across India.",
+    "Shop GI-certified Ratnagiri Alphonso (Hapus) mangoes online. Premium (12 pcs · ₹2,999), Standard (14 pcs · ₹2,799), Regular (16 pcs · ₹2,699). Farm-direct, naturally ripened, delivered in 24–48 hours across India.",
   keywords: [
     "buy Alphonso mango box online",
     "Ratnagiri Alphonso mango order",
@@ -24,20 +24,20 @@ export const metadata: Metadata = {
     url: `${BASE_URL}/products`,
     title: "Buy Ratnagiri Alphonso Mangoes — Aam Native",
     description:
-      "GI-certified Alphonso mango boxes from ₹849. Premium, Standard & Medium. Farm-to-door in 24–48 hrs. Naturally ripened, zero carbide.",
+      "GI-certified Alphonso mango boxes from ₹2,699. Premium, Standard & Regular. Farm-to-door in 24–48 hrs. Naturally ripened, zero carbide.",
     images: [
       {
         url: `${BASE_URL}/og-image.jpg`,
         width: 1200,
         height: 630,
-        alt: "Aam Native Ratnagiri Alphonso Mango Boxes — Premium, Standard, Medium",
+        alt: "Aam Native Ratnagiri Alphonso Mango Boxes — Premium, Standard, Regular",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
     title: "Buy Ratnagiri Alphonso Mangoes — Aam Native",
-    description: "GI-certified Alphonso boxes from ₹849. Farm-direct. Naturally ripened. Order now.",
+    description: "GI-certified Alphonso boxes from ₹2,699. Farm-direct. Naturally ripened. Order now.",
     images: [`${BASE_URL}/og-image.jpg`],
   },
 };

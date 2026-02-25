@@ -14,7 +14,7 @@ export const metadata: Metadata = {
     template: "%s | Aam Native",
   },
   description:
-    "Buy authentic GI-certified Ratnagiri Alphonso (Hapus) mangoes online. Farm-to-door delivery in 24–48 hours. Naturally ripened, zero carbide. Premium, Standard & Medium boxes. Direct from Konkan orchards.",
+    "Buy authentic GI-certified Ratnagiri Alphonso (Hapus) mangoes online. Farm-to-door delivery in 24–48 hours. Naturally ripened, zero carbide. Premium, Standard & Regular boxes. Direct from Konkan orchards.",
   keywords: [
     "buy Alphonso mango online India",
     "Ratnagiri Alphonso mango order",
@@ -51,7 +51,7 @@ export const metadata: Metadata = {
     siteName: "Aam Native",
     title: "Aam Native — Buy GI-Certified Ratnagiri Alphonso Mangoes Online",
     description:
-      "Authentic GI-certified Ratnagiri Alphonso mangoes. Farm-to-door in 24–48 hours. No carbide, no chemicals. Premium, Standard & Medium boxes direct from Konkan orchards.",
+      "Authentic GI-certified Ratnagiri Alphonso mangoes. Farm-to-door in 24–48 hours. No carbide, no chemicals. Premium, Standard & Regular boxes direct from Konkan orchards.",
     images: [
       {
         url: `${BASE_URL}/og-image.jpg`,
@@ -173,7 +173,7 @@ const localBizSchema = {
           name: "Ratnagiri Alphonso Mango — Premium Grade",
           url: `${BASE_URL}/products/rathnagiri-alphonso-premium`,
         },
-        price: "1299",
+        price: "2999",
         priceCurrency: "INR",
         availability: "https://schema.org/InStock",
         priceValidUntil: "2026-07-31",
@@ -185,7 +185,7 @@ const localBizSchema = {
           name: "Ratnagiri Alphonso Mango — Standard Grade",
           url: `${BASE_URL}/products/rathnagiri-alphonso-standard`,
         },
-        price: "999",
+        price: "2799",
         priceCurrency: "INR",
         availability: "https://schema.org/InStock",
         priceValidUntil: "2026-07-31",
@@ -194,10 +194,10 @@ const localBizSchema = {
         "@type": "Offer",
         itemOffered: {
           "@type": "Product",
-          name: "Ratnagiri Alphonso Mango — Medium Grade",
-          url: `${BASE_URL}/products/rathnagiri-alphonso-medium`,
+          name: "Ratnagiri Alphonso Mango — Regular Grade",
+          url: `${BASE_URL}/products/rathnagiri-alphonso-regular`,
         },
-        price: "849",
+        price: "2699",
         priceCurrency: "INR",
         availability: "https://schema.org/InStock",
         priceValidUntil: "2026-07-31",

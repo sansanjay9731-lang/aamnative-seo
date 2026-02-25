@@ -14,7 +14,7 @@ const reveal: Variants = {
     show: { opacity: 1, y: 0, transition: { duration: 0.8, ease: [0.16, 1, 0.3, 1] } },
 };
 
-const grades = ["All", "Premium", "Standard", "Medium"] as const;
+const grades = ["All", "Premium", "Standard", "Regular"] as const;
 
 export default function ProductsPage() {
     const [filter, setFilter] = useState<typeof grades[number]>("All");
