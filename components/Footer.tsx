@@ -21,6 +21,7 @@ const shopLinks = [
 const infoLinks = [
     { href: "/about", label: "our farm" },
     { href: "/blog", label: "blog" },
+    { href: "/faq", label: "faq" },
     { href: "/contact", label: "contact us" },
     { href: "/track-order", label: "track my order" },
 ];

@@ -82,6 +82,7 @@ export default function Header() {
                         {[
                             { href: "/products", label: "shop" },
                             { href: "/about", label: "our farm" },
+                            { href: "/faq", label: "faq" },
                         ].map(link => (
                             <Link key={link.href} href={link.href}
                                 style={{
@@ -159,6 +160,7 @@ export default function Header() {
                                 { href: "/", label: "home" },
                                 { href: "/products", label: "shop" },
                                 { href: "/about", label: "our farm" },
+                                    { href: "/faq", label: "faq" },
                             ].map(link => (
                                 <Link key={link.href} href={link.href} onClick={() => setMenuOpen(false)}
                                     style={{
