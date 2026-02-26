@@ -34,9 +34,9 @@ export default function ContactPage() {
 
                 <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr 1fr", gap: "1rem", marginBottom: "2.5rem" }}>
                     {[
-                        { icon: "📞", label: "Call Us", value: "+91 98765 43210", href: "tel:+919876543210" },
+                        { icon: "📞", label: "Call Us", value: "+91 99649 84695", href: "tel:+919964984695" },
                         { icon: "✉️", label: "Email", value: "hello@aamnative.com", href: "mailto:hello@aamnative.com" },
-                        { icon: "💬", label: "WhatsApp", value: "Chat with us", href: "https://wa.me/919876543210" },
+                        { icon: "💬", label: "WhatsApp", value: "Chat with us", href: "https://wa.me/919964984695" },
                     ].map(c => (
                         <a key={c.label} href={c.href} target={c.label === "WhatsApp" ? "_blank" : undefined}
                             style={{

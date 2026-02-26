@@ -1,0 +1,8 @@
+<svg width="120" height="120" viewBox="0 0 120 120" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Mango circle — solid flat orange -->
+  <circle cx="60" cy="65" r="45" fill="#E8720C"/>
+  <!-- Leaf notch — geometric, top-right -->
+  <path d="M86 25 C86 25 98 12 98 5 C96 6 88 12 86 18 C84 12 76 6 74 5 C74 12 86 25 86 25Z" fill="#1F5C3A"/>
+  <!-- Subtle highlight on mango -->
+  <ellipse cx="46" cy="55" rx="12" ry="18" fill="rgba(255,255,255,0.15)"/>
+</svg>

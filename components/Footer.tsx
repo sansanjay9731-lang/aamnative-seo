@@ -56,7 +56,7 @@ export default function Footer() {
                                 { href: "https://instagram.com/aamnative", icon: "ig" },
                                 { href: "https://facebook.com/aamnative", icon: "fb" },
                                 { href: "https://youtube.com/@aamnative", icon: "yt" },
-                                { href: "https://wa.me/919876543210", icon: "wa" },
+                                { href: "https://wa.me/919964984695", icon: "wa" },
                             ].map(s => (
                                 <a key={s.icon} href={s.href} target="_blank" rel="noopener noreferrer" className="ft-social" aria-label={s.icon}>
                                     {s.icon}
@@ -99,9 +99,10 @@ export default function Footer() {
                     <div>
                         <p style={{ color: "var(--saffron, #E8720C)", fontSize: "0.6rem", fontWeight: 700, letterSpacing: "0.2em", textTransform: "uppercase", marginBottom: "1rem" }}>contact</p>
                         <div style={{ display: "flex", flexDirection: "column", gap: "0.625rem" }}>
-                            <a href="tel:+919876543210" className="ft-link">+91 98765 43210</a>
-                            <a href="mailto:hello@aamnative.com" className="ft-link">hello@aamnative.com</a>
-                            <a href="https://wa.me/919876543210" target="_blank" rel="noopener noreferrer" className="ft-link">whatsapp</a>
+                            <a href="tel:+919964984695" className="ft-link">+91 99649 84695</a>
+                        </div>
+                        <div style={{ display: "flex", alignItems: "center", gap: "0.5rem" }}>
+                            <a href="https://wa.me/919964984695" target="_blank" rel="noopener noreferrer" className="ft-link">whatsapp</a>
                         </div>
                     </div>
                 </div>

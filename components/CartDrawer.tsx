@@ -142,7 +142,7 @@ export default function CartDrawer() {
                                 </div>
                                 <button
                                     onClick={() => {
-                                        const phone = "919876543210"; // User's number
+                                        const phone = "919964984695"; // User's number
                                         const orderList = items.map(i => `• ${i.quantity}x ${i.product.name} (${i.product.grade})`).join("\n");
                                         const message = `Hello Aam Native! 🥭\n\nI'd like to place an order:\n\n${orderList}\n\nTotal: *₹${subtotal.toLocaleString("en-IN")}*\n\nPlease let me know the next steps for payment and delivery! ✨`;
                                         window.open(`https://wa.me/${phone}?text=${encodeURIComponent(message)}`, "_blank");

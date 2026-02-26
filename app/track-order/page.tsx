@@ -88,8 +88,8 @@ export default function TrackOrderPage() {
 
                 <p style={{ marginTop: "2rem", fontSize: "0.8rem", color: "var(--muted)" }}>
                     Can&apos;t find your order? Contact us on{" "}
-                    <a href="https://wa.me/919876543210" target="_blank" rel="noopener noreferrer" style={{ color: "#25D366", fontWeight: 700 }}>WhatsApp</a>
-                    {" "}or call <a href="tel:+919876543210" style={{ color: "var(--saffron)", fontWeight: 700 }}>+91 98765 43210</a>
+                    <a href="https://wa.me/919964984695" target="_blank" rel="noopener noreferrer" style={{ color: "#25D366", fontWeight: 700 }}>WhatsApp</a>
+                    {" "}or call <a href="tel:+919964984695" style={{ color: "var(--saffron)", fontWeight: 700 }}>+91 99649 84695</a>
                 </p>
             </div>
         </div>
