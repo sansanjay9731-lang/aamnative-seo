@@ -1,0 +1,100 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "sqlite"
+  url      = "file:./dev.db"
+}
+
+model Product {
+  id            String   @id @default(cuid())
+  slug          String   @unique
+  name          String
+  grade         String
+  tagline       String
+  description   String
+  price         Int
+  originalPrice Int
+  pieces        Int
+  weight        String
+  boxWeight     String
+  badge         String
+  badgeColor    String
+  image         String
+  galleryImages String   // JSON
+  rating        Float    @default(5.0)
+  reviewCount   Int      @default(0)
+  inStock       Boolean  @default(true)
+  features      String   // JSON
+  whyChoose     String   // JSON
+  nutrition     String   // JSON
+  reviews       String   // JSON
+  faqs          String   // JSON
+  recipes       String   // JSON
+  
+  orderItems    OrderItem[]
+
+  createdAt     DateTime @default(now())
+  updatedAt     DateTime @updatedAt
+}
+
+model Customer {
+  id        String   @id @default(cuid())
+  phone     String   @unique
+  name      String?
+  email     String?
+  address   String?
+
+  orders    Order[]
+  sessions  CartSession[]
+
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+}
+
+model Order {
+  id              String   @id @default(cuid())
+  orderNumber     String   @unique
+  customerId      String
+  status          String   @default("PENDING")
+  totalAmount     Int
+  razorpayOrderId String?  @unique
+  paymentId       String?
+  
+  customer        Customer @relation(fields: [customerId], references: [id])
+  items           OrderItem[]
+
+  shippingAddress String?
+  notes           String?
+
+  createdAt       DateTime @default(now())
+  updatedAt       DateTime @updatedAt
+}
+
+model OrderItem {
+  id          String   @id @default(cuid())
+  orderId     String
+  productId   String
+  quantity    Int
+  priceAtTime Int
+
+  order       Order    @relation(fields: [orderId], references: [id], onDelete: Cascade)
+  product     Product  @relation(fields: [productId], references: [id])
+
+  createdAt   DateTime @default(now())
+  updatedAt   DateTime @updatedAt
+}
+
+model CartSession {
+  id          String   @id @default(cuid())
+  customerId  String?
+  phone       String?
+  items       String 
+  status      String   @default("ACTIVE")
+
+  customer    Customer? @relation(fields: [customerId], references: [id])
+
+  createdAt   DateTime @default(now())
+  updatedAt   DateTime @updatedAt
+}

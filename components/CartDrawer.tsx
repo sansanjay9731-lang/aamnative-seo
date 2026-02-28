@@ -140,18 +140,14 @@ export default function CartDrawer() {
                                         ₹{subtotal.toLocaleString("en-IN")}
                                     </span>
                                 </div>
-                                <button
-                                    onClick={() => {
-                                        const phone = "919964984695"; // User's number
-                                        const orderList = items.map(i => `• ${i.quantity}x ${i.product.name} (${i.product.grade})`).join("\n");
-                                        const message = `Hello Aam Native! 🥭\n\nI'd like to place an order:\n\n${orderList}\n\nTotal: *₹${subtotal.toLocaleString("en-IN")}*\n\nPlease let me know the next steps for payment and delivery! ✨`;
-                                        window.open(`https://wa.me/${phone}?text=${encodeURIComponent(message)}`, "_blank");
-                                    }}
-                                    className="btn btn-saffron glow-pulse"
-                                    style={{ width: "100%", borderRadius: "14px", padding: "1.0625rem", fontSize: "0.875rem" }}
+                                <Link
+                                    href="/checkout"
+                                    onClick={closeCart}
+                                    className="btn btn-saffron glow-pulse flex items-center justify-center gap-2"
+                                    style={{ width: "100%", borderRadius: "14px", padding: "1.0625rem", fontSize: "0.875rem", textDecoration: "none" }}
                                 >
                                     Proceed to Checkout <ArrowRight size={15} />
-                                </button>
+                                </Link>
                                 <p style={{ textAlign: "center", fontSize: "0.7rem", color: "var(--muted)", marginTop: "0.875rem" }}>
                                     🔒 Secure checkout · 100% freshness guarantee
                                 </p>

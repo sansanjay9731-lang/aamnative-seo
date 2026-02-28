@@ -71,7 +71,12 @@ export const metadata: Metadata = {
       "GI-tagged Ratnagiri orchards → your doorstep in 24 hrs. Naturally ripened. No carbide. Order the real Hapus.",
     images: [`${BASE_URL}/og-image.jpg`],
   },
-  alternates: { canonical: BASE_URL },
+  alternates: {
+    canonical: BASE_URL,
+    languages: {
+      "en-IN": BASE_URL,
+    },
+  },
   verification: { google: "YOUR_GOOGLE_SEARCH_CONSOLE_TOKEN" },
 };
 
@@ -162,6 +167,13 @@ const localBizSchema = {
   currenciesAccepted: "INR",
   paymentAccepted: "Cash, Credit Card, Debit Card, UPI, Net Banking",
   areaServed: { "@type": "Country", name: "India" },
+  aggregateRating: {
+    "@type": "AggregateRating",
+    ratingValue: "4.9",
+    reviewCount: "749",
+    bestRating: "5",
+    worstRating: "1",
+  },
   hasOfferCatalog: {
     "@type": "OfferCatalog",
     name: "Ratnagiri Alphonso Mango Boxes",
