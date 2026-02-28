@@ -3,12 +3,30 @@ import Link from "next/link";
 /* ── Footer Logo ── */
 function FooterLogo() {
     return (
-        <svg width="148" height="36" viewBox="0 0 160 36" fill="none" xmlns="http://www.w3.org/2000/svg" aria-label="aam native">
-            <circle cx="16" cy="19" r="13" fill="#E8720C" />
-            <path d="M24 8 C24 8 28 4 28 2 C27.5 2.2 25 4 24 6 C23 4 20.5 2.2 20 2 C20 4 24 8 24 8Z" fill="#27724A" />
-            <ellipse cx="12" cy="16" rx="3.5" ry="5" fill="rgba(255,255,255,0.15)" />
-            <text x="36" y="22" fontFamily="'Plus Jakarta Sans', 'Inter', system-ui, sans-serif" fontWeight="700" fontSize="16.5" letterSpacing="-0.3" fill="white">aam native</text>
-            <text x="37" y="33" fontFamily="'Plus Jakarta Sans', 'Inter', system-ui, sans-serif" fontWeight="500" fontSize="5.5" letterSpacing="2.5" fill="rgba(255,255,255,0.35)">authentic alphonso</text>
+        <svg width="130" height="48" viewBox="0 0 160 60" fill="none" xmlns="http://www.w3.org/2000/svg" aria-label="aam native">
+            {/* Mango Icon */}
+            <g>
+                <circle cx="26" cy="30" r="22" fill="#F6921E" />
+                <path d="M 8 26 C 8 16 16 10 26 8 C 21 9 14 15 12 24 C 11 28 12 32 14 36 C 9 32 8 28 8 26 Z" fill="#FFB443" opacity="0.8" />
+                <path d="M 12 44 C 24 54 42 48 46 34 C 47 42 39 51 26 52 C 18 52 14 48 12 44 Z" fill="#E07A0B" />
+
+                {/* Leaf */}
+                <path d="M 40 10 C 40 10 48 0 52 4 C 54 6 49 14 43 15 C 41 15 40 10 40 10" fill="#3C7143" />
+                <path d="M 42 12 C 45 6 49 3 51 4" stroke="#2B5230" strokeWidth="1" fill="none" />
+            </g>
+
+            {/* Text blocks */}
+            <text x="56" y="24" fontFamily="'Plus Jakarta Sans', 'Inter', system-ui, sans-serif" fontWeight="800" fontSize="24" letterSpacing="-0.5" fill="white">
+                aam
+            </text>
+
+            <text x="56" y="44" fontFamily="'Plus Jakarta Sans', 'Inter', system-ui, sans-serif" fontWeight="800" fontSize="24" letterSpacing="-0.5" fill="white">
+                native
+            </text>
+
+            <text x="58" y="55" fontFamily="'Plus Jakarta Sans', 'Inter', system-ui, sans-serif" fontWeight="500" fontSize="6.5" letterSpacing="1.2" fill="rgba(255,255,255,0.7)">
+                AUTHENTIC ALPHONSO
+            </text>
         </svg>
     );
 }

@@ -31,22 +31,23 @@ The Aam Native logo is a minimalist mark combining a **flat orange mango circle*
 ### Logo Anatomy
 ```
 ┌────────────────────────────────────┐
-│  🟠  aam native                    │
+│  🥭  aam                           │
+│       native                       │
 │  ↑    ↑                            │
-│  │    └─ Plus Jakarta Sans, 700    │
-│  │       letter-spacing: -0.3px    │
-│  │       Color: #1F5C3A (dark)     │
+│  │    └─ Plus Jakarta Sans, 800    │
+│  │       letter-spacing: -0.5px    │
+│  │       Color: #244731 (dark)     │
 │  │              #FFFFFF (light)    │
 │  │                                 │
-│  └─── Orange circle: #E8720C       │
-│        Green leaf:   #1F5C3A       │
-│        Highlight:    white @ 15%   │
+│  └─── Orange circle: #F6921E       │
+│       Mango Body:    #FFB443 & #E07A0B
+│       Green leaf:    #3C7143       │
 │                                    │
-│       authentic alphonso           │
+│       AUTHENTIC ALPHONSO           │
 │       ↑ Plus Jakarta Sans, 500    │
-│         letter-spacing: 2.5px      │
-│         Color: #9CA38B (dark)      │
-│                white @ 45% (light) │
+│         letter-spacing: 1.2px      │
+│         Color: #244731 (dark)      │
+│                rgba(255,255,255,0.7) (light) │
 └────────────────────────────────────┘
 ```
 
