@@ -17,7 +17,7 @@ export const posts: BlogPost[] = [
         content: `
             <p>The Alphonso mango, often hailed as the "King of Fruits," reaches its absolute pinnacle in the red laterite soils of the Rathnagiri district in Maharashtra. But why is this specific region so perfect?</p>
             <h2>The Microclimate Magic</h2>
-            <p>Rathnagiri's unique geographical location—sandwiched between the Arabian Sea and the Western Ghats—creates a perfect storm for mango cultivation. The salty sea breeze, combined with the intense pre-monsoon heat and the specific mineral composition of the volcanic soil, gives the Rathnagiri Alphonso its iconic saffron-yellow color, buttery texture, and unmistakable aroma.</p>
+            <p>Rathnagiri's unique geographical location, sandwiched between the Arabian Sea and the Western Ghats, creates a perfect storm for mango cultivation. The salty sea breeze, combined with the intense pre-monsoon heat and the specific mineral composition of the volcanic soil, gives the Rathnagiri Alphonso its iconic saffron-yellow color, buttery texture, and unmistakable aroma.</p>
             <h2>GI Certification: Why it Matters</h2>
             <p>Just like Champagne must come from the Champagne region of France, a true Rathnagiri Alphonso is protected by a Geographical Indication (GI) tag. This ensures that when you buy a GI-certified mango, you are tasting the authentic terroir of the Konkan coast, not an imitation grown elsewhere.</p>
             <h2>The Aam Native Difference</h2>
@@ -205,7 +205,7 @@ export const posts: BlogPost[] = [
         title: "Season Diary: Week 1 Harvest Report & Brix Readings (2026)",
         excerpt: "Our first field report of the 2026 season! We track the pre-monsoon heatwave, our first harvest Brix test, and what it means for your mango boxes.",
         content: `
-            <p>Welcome to the Aam Native Season Diary! Transparency is our core value, which is why every week during the harvest, we publish real data straight from our Ratnagiri orchards. This isn't marketing—this is farming.</p>
+            <p>Welcome to the Aam Native Season Diary! Transparency is our core value, which is why every week during the harvest, we publish real data straight from our Ratnagiri orchards. This isn't marketing: this is farming.</p>
 
             <h2>Weather Report: The Pre-Monsoon Bake</h2>
             <p>The first week of March 2026 has been intensely hot across the Konkan belt. Daytime highs pushed slightly above 36°C (97°F). While uncomfortable for us, this intense, dry heat is exactly what the Alphonso trees need to force the sugars into the fruit during their final weeks on the branch.</p>

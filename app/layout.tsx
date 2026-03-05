@@ -10,7 +10,7 @@ const BASE_URL = "https://aamnative.com";
 export const metadata: Metadata = {
   metadataBase: new URL(BASE_URL),
   title: {
-    default: "Aam Native — Buy GI-Certified Ratnagiri Alphonso Mangoes Online | Farm Direct",
+    default: "Aam Native | Buy GI-Certified Ratnagiri Alphonso Mangoes Online | Farm Direct",
     template: "%s | Aam Native",
   },
   description:
@@ -53,15 +53,15 @@ export const metadata: Metadata = {
     locale: "en_IN",
     url: BASE_URL,
     siteName: "Aam Native",
-    title: "Aam Native — Buy GI-Certified Ratnagiri Alphonso Mangoes Online",
+    title: "Aam Native | Buy GI-Certified Ratnagiri Alphonso Mangoes Online",
     description:
-      "Authentic GI-certified Ratnagiri Alphonso mangoes. Farm-to-door in 24–48 hours. No carbide, no chemicals. Premium, Standard & Regular boxes direct from Konkan orchards.",
+      "Authentic GI-certified Ratnagiri Alphonso mangoes. Farm-to-door in 24-48 hours. No carbide, no chemicals. Premium, Standard & Regular boxes direct from Konkan orchards.",
     images: [
       {
         url: `${BASE_URL}/og-image.jpg`,
         width: 1200,
         height: 630,
-        alt: "Aam Native — Authentic GI-Certified Ratnagiri Alphonso Mangoes",
+        alt: "Aam Native | Authentic GI-Certified Ratnagiri Alphonso Mangoes",
         type: "image/jpeg",
       },
     ],
@@ -70,7 +70,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     site: "@aamnative",
     creator: "@aamnative",
-    title: "Aam Native — Authentic Ratnagiri Alphonso Mangoes Online",
+    title: "Aam Native | Authentic Ratnagiri Alphonso Mangoes Online",
     description:
       "GI-tagged Ratnagiri orchards → your doorstep in 24 hrs. Naturally ripened. No carbide. Order the real Hapus.",
     images: [`${BASE_URL}/og-image.jpg`],
@@ -97,7 +97,7 @@ const orgSchema = {
     "url": `${BASE_URL}/logo.svg`,
     "width": 300,
     "height": 300,
-    "caption": "Aam Native — Authentic Ratnagiri Alphonso Mangoes",
+    "caption": "Aam Native: Authentic Ratnagiri Alphonso Mangoes",
   },
   image: `${BASE_URL}/og-image.jpg`,
   description:
@@ -195,7 +195,7 @@ const localBizSchema = {
         "@type": "Offer",
         itemOffered: {
           "@type": "Product",
-          name: "Ratnagiri Alphonso Mango — Premium Grade",
+          name: "Ratnagiri Alphonso Mango: Premium Grade",
           url: `${BASE_URL}/products/rathnagiri-alphonso-premium`,
         },
         price: "2999",
@@ -207,7 +207,7 @@ const localBizSchema = {
         "@type": "Offer",
         itemOffered: {
           "@type": "Product",
-          name: "Ratnagiri Alphonso Mango — Standard Grade",
+          name: "Ratnagiri Alphonso Mango: Standard Grade",
           url: `${BASE_URL}/products/rathnagiri-alphonso-standard`,
         },
         price: "2799",
@@ -219,7 +219,7 @@ const localBizSchema = {
         "@type": "Offer",
         itemOffered: {
           "@type": "Product",
-          name: "Ratnagiri Alphonso Mango — Regular Grade",
+          name: "Ratnagiri Alphonso Mango: Regular Grade",
           url: `${BASE_URL}/products/rathnagiri-alphonso-regular`,
         },
         price: "2699",

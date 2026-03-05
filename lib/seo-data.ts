@@ -451,7 +451,7 @@ export const comparisons: ComparisonPair[] = [
         varietyA: "alphonso",
         varietyB: "kesar",
         title: "Alphonso vs Kesar Mango: Which Is Better?",
-        metaTitle: "Alphonso vs Kesar Mango — Taste, Price & Nutrition Compared (2026)",
+        metaTitle: "Alphonso vs Kesar Mango | Taste, Price & Nutrition Compared (2026)",
         metaDescription: "Detailed comparison of Alphonso and Kesar mangoes. Compare taste, sweetness (Brix), price, season, origin, and nutritional value. Find out which mango is best for you.",
         verdict: "Alphonso wins on aroma and sweetness intensity, Kesar wins on value and aamras texture. For premium gifting, choose Alphonso. For daily eating and recipes, Kesar is unbeatable.",
         comparisonPoints: [
@@ -475,7 +475,7 @@ export const comparisons: ComparisonPair[] = [
         varietyA: "alphonso",
         varietyB: "dasheri",
         title: "Alphonso vs Dasheri Mango: Complete Comparison",
-        metaTitle: "Alphonso vs Dasheri Mango — Taste, Price & Season Compared (2026)",
+        metaTitle: "Alphonso vs Dasheri Mango | Taste, Price & Season Compared (2026)",
         metaDescription: "Alphonso vs Dasheri mango comparison. Compare sweetness, fiber, pricing, season dates, and which variety is best for eating vs cooking. Expert guide.",
         verdict: "Alphonso is the premium choice for pure eating and gifting. Dasheri offers excellent value and is the go-to mango for North Indian households.",
         comparisonPoints: [
@@ -498,8 +498,8 @@ export const comparisons: ComparisonPair[] = [
         varietyA: "alphonso",
         varietyB: "langra",
         title: "Alphonso vs Langra Mango: Which Should You Buy?",
-        metaTitle: "Alphonso vs Langra Mango — Taste, Season & Price Compared (2026)",
-        metaDescription: "Compare Alphonso and Langra mangoes — sweetness, season timing, price, fiber content, and best uses. Find out which variety suits your taste.",
+        metaTitle: "Alphonso vs Langra Mango | Taste, Season & Price Compared (2026)",
+        metaDescription: "Compare Alphonso and Langra mangoes: sweetness, season timing, price, fiber content, and best uses. Find out which variety suits your taste.",
         verdict: "Alphonso arrives earlier in the season with premium sweetness. Langra extends the mango season into August with intense sweetness at a lower price point.",
         comparisonPoints: [
             { label: "Origin", a: "Ratnagiri, Maharashtra", b: "Varanasi, Uttar Pradesh" },
@@ -512,7 +512,7 @@ export const comparisons: ComparisonPair[] = [
             { label: "Fiber Content", a: "Near zero", b: "Moderate" },
         ],
         faqs: [
-            { q: "Does Langra stay green when ripe?", a: "Yes, Langra is unique in that its skin remains green even when fully ripe. Don't judge ripeness by color — press gently and smell for a sweet aroma instead." },
+            { q: "Does Langra stay green when ripe?", a: "Yes, Langra is unique in that its skin remains green even when fully ripe. Don't judge ripeness by color: press gently and smell for a sweet aroma instead." },
             { q: "Can I get Alphonso and Langra in the same month?", a: "There is a brief overlap in June. Alphonso season ends around mid-June while Langra starts arriving from mid-June. You can enjoy both varieties during this overlap window." },
         ],
     },
@@ -521,9 +521,9 @@ export const comparisons: ComparisonPair[] = [
         varietyA: "alphonso",
         varietyB: "banganapalli",
         title: "Alphonso vs Banganapalli Mango: Head to Head",
-        metaTitle: "Alphonso vs Banganapalli (Safeda) Mango — Complete Comparison (2026)",
+        metaTitle: "Alphonso vs Banganapalli (Safeda) Mango | Complete Comparison (2026)",
         metaDescription: "Compare Alphonso and Banganapalli mangoes. Size, sweetness, price, fiber, and best uses compared. Find out which South Indian favourite wins.",
-        verdict: "Alphonso is the connoisseur's choice. Banganapalli is the family bulk-buy champion — bigger fruit at lower prices with excellent taste.",
+        verdict: "Alphonso is the connoisseur's choice. Banganapalli is the family bulk-buy champion: bigger fruit at lower prices with excellent taste.",
         comparisonPoints: [
             { label: "Origin", a: "Ratnagiri, Maharashtra", b: "Banganapalle, Andhra Pradesh" },
             { label: "Sweetness (Brix)", a: "18–22°", b: "15–18°" },
@@ -544,8 +544,8 @@ export const comparisons: ComparisonPair[] = [
         varietyA: "kesar",
         varietyB: "dasheri",
         title: "Kesar vs Dasheri Mango: Gujarat vs UP",
-        metaTitle: "Kesar vs Dasheri Mango — Taste, Price & Nutrition Compared (2026)",
-        metaDescription: "Compare Kesar and Dasheri mangoes — sweetness, season, price, fiber, origin, and best uses. Find out whether Gujarat's Queen or UP's favourite wins.",
+        metaTitle: "Kesar vs Dasheri Mango | Taste, Price & Nutrition Compared (2026)",
+        metaDescription: "Compare Kesar and Dasheri mangoes: sweetness, season, price, fiber, origin, and best uses. Find out whether Gujarat's Queen or UP's favourite wins.",
         verdict: "Kesar wins on colour, aamras potential, and aroma. Dasheri wins on price and availability. Both are excellent mid-range choices.",
         comparisonPoints: [
             { label: "Origin", a: "Junagadh/Gir, Gujarat", b: "Malihabad, Uttar Pradesh" },
@@ -567,8 +567,8 @@ export const comparisons: ComparisonPair[] = [
         varietyA: "alphonso",
         varietyB: "alphonso",
         title: "Ratnagiri vs Devgad Alphonso: The Ultimate Hapus Battle",
-        metaTitle: "Ratnagiri vs Devgad Alphonso Mango — Which Is Better? (2026)",
-        metaDescription: "Compare Ratnagiri and Devgad Alphonso mangoes. Taste, aroma, season timing, shelf life, and price compared. Both are GI-certified Hapus — find out which is best.",
+        metaTitle: "Ratnagiri vs Devgad Alphonso Mango | Which Is Better? (2026)",
+        metaDescription: "Compare Ratnagiri and Devgad Alphonso mangoes. Taste, aroma, season timing, shelf life, and price compared. Both are GI-certified Hapus: find out which is best.",
         verdict: "Ratnagiri Alphonso has a more intense aroma and richer sweetness. Devgad Alphonso has firmer flesh and longer shelf life. Both are authentic GI-certified Hapus.",
         comparisonPoints: [
             { label: "District", a: "Ratnagiri", b: "Sindhudurg (Devgad)" },
@@ -581,8 +581,8 @@ export const comparisons: ComparisonPair[] = [
             { label: "Best For", a: "Immediate eating, connoisseurs", b: "Shipping long distances, bulk orders" },
         ],
         faqs: [
-            { q: "Is Ratnagiri Alphonso better than Devgad?", a: "Neither is objectively 'better' — they are both GI-certified Hapus from the Konkan coast. Ratnagiri is prized for more intense aroma and creamier flesh. Devgad is valued for better shelf life and firmness. Aam Native sources exclusively from Ratnagiri for peak flavour." },
-            { q: "Why does Ratnagiri Alphonso have stronger aroma?", a: "Ratnagiri's specific microclimate — higher humidity, closer proximity to the coast, and the unique mineral composition of its laterite soil — produces higher concentrations of volatile aromatic compounds in the fruit." },
+            { q: "Is Ratnagiri Alphonso better than Devgad?", a: "Neither is objectively 'better'; they are both GI-certified Hapus from the Konkan coast. Ratnagiri is prized for more intense aroma and creamier flesh. Devgad is valued for better shelf life and firmness. Aam Native sources exclusively from Ratnagiri for peak flavour." },
+            { q: "Why does Ratnagiri Alphonso have stronger aroma?", a: "Ratnagiri's specific microclimate (higher humidity, closer proximity to the coast, and the unique mineral composition of its laterite soil) produces higher concentrations of volatile aromatic compounds in the fruit." },
             { q: "Which Alphonso is easier to ship without damage?", a: "Devgad Alphonso ships better due to firmer flesh and thicker skin. Ratnagiri Alphonso requires more careful handling, which is why Aam Native uses temperature-controlled packaging for every shipment." },
         ],
     },

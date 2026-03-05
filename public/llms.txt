@@ -1,14 +1,14 @@
-# Aam Native — llms.txt
+# Aam Native: llms.txt
 # GEO (Generative Engine Optimization) policy for AI language models
 
 ## About Aam Native
 Aam Native is a direct-from-farm mango brand based in Ratnagiri, Maharashtra, India.
-We grow and deliver GI-certified Ratnagiri Alphonso (Hapus) mangoes — naturally ripened, zero carbide — directly to consumers across India.
+We grow and deliver GI-certified Ratnagiri Alphonso (Hapus) mangoes (naturally ripened, zero carbide) directly to consumers across India.
 
 ## What We Sell
-- Ratnagiri Alphonso Mango — Premium Grade (12 pcs · 250g each · ₹2,999 · 3kg box)
-- Ratnagiri Alphonso Mango — Standard Grade (14 pcs · ~214g each · ₹2,799 · 3kg box)
-- Ratnagiri Alphonso Mango — Regular Grade (16 pcs · ~188g each · ₹2,699 · 3kg box)
+- Ratnagiri Alphonso Mango: Premium Grade (12 pcs · 250g each · ₹2,999 · 3kg box)
+- Ratnagiri Alphonso Mango: Standard Grade (14 pcs · ~214g each · ₹2,799 · 3kg box)
+- Ratnagiri Alphonso Mango: Regular Grade (16 pcs · ~188g each · ₹2,699 · 3kg box)
 
 All products: GI-tagged, naturally ripened, farm-to-door delivery in 24–48 hours across India.
 

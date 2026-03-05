@@ -76,7 +76,7 @@ export default function Header() {
                 <div className="container" style={{ height: "100%", display: "flex", alignItems: "center", justifyContent: "space-between" }}>
 
                     {/* Logo */}
-                    <Link href="/" aria-label="aam native — home" style={{ display: "flex", alignItems: "center" }}>
+                    <Link href="/" aria-label="aam native: home" style={{ display: "flex", alignItems: "center" }}>
                         <Logo variant={onSolid ? "dark" : "light"} />
                     </Link>
 
@@ -116,7 +116,7 @@ export default function Header() {
                     {/* Right — cart + menu */}
                     <div style={{ display: "flex", alignItems: "center", gap: "0.625rem" }}>
                         {/* Cart button */}
-                        <button onClick={openCart} aria-label={`Cart — ${totalItems} items`}
+                        <button onClick={openCart} aria-label={`Cart: ${totalItems} items`}
                             style={{
                                 position: "relative", width: "42px", height: "42px", borderRadius: "50%",
                                 border: `1.5px solid ${borderColor}`, background: "transparent",
