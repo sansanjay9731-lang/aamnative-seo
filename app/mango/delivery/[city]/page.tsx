@@ -2,26 +2,58 @@ import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import Link from "next/link";
 import { ArrowLeft, Truck, PackageCheck, Zap } from "lucide-react";
-import { deliveryCities } from "@/lib/seo-data";
+import { deliveryCities, getAllCombos, varieties } from "@/lib/seo-data";
 
 const BASE_URL = "https://aamnative.com";
 
 export function generateStaticParams() {
-    return Object.keys(deliveryCities).map((city) => ({ city }));
+    const cityParams = Object.keys(deliveryCities).map((city) => ({ city }));
+    const comboParams = getAllCombos().map((combo) => ({ city: combo.slug }));
+    return [...cityParams, ...comboParams];
+}
+
+function resolveCityData(slug: string) {
+    // 1. Check if it's a direct city
+    if (deliveryCities[slug as keyof typeof deliveryCities]) {
+        return {
+            city: deliveryCities[slug as keyof typeof deliveryCities],
+            variety: null
+        };
+    }
+    // 2. Check if it's a combo
+    const combo = getAllCombos().find(c => c.slug === slug);
+    if (combo) {
+        return {
+            city: deliveryCities[combo.cityKey as keyof typeof deliveryCities],
+            // @ts-ignore
+            variety: varieties[combo.varietyKey]
+        };
+    }
+    return null;
 }
 
 export async function generateMetadata(
     { params }: { params: Promise<{ city: string }> }
 ): Promise<Metadata> {
     const { city } = await params;
-    const data = deliveryCities[city as keyof typeof deliveryCities];
+    const resolved = resolveCityData(city);
 
-    if (!data) return {};
+    if (!resolved) return {};
+
+    const { city: cityData, variety } = resolved;
+
+    const title = variety
+        ? `Buy Ratnagiri ${variety.name} Mangoes Online in ${cityData.name} | Direct Delivery`
+        : `Buy Ratnagiri Alphonso Mangoes Online in ${cityData.name} | Fast Delivery`;
+
+    const description = variety
+        ? `Order fresh ${variety.name} mangoes online with ${cityData.deliveryTimeline} delivery to ${cityData.name}. GI-Certified, organic, farm-direct to your home.`
+        : `Order fresh, GI-Certified Ratnagiri Alphonso Mangoes online with ${cityData.deliveryTimeline} delivery to ${cityData.name}. Zero carbide, farm-direct to your door.`;
 
     return {
-        title: `Buy Ratnagiri Alphonso Mangoes Online in ${data.name} | Fast Delivery`,
-        description: `Order fresh, GI-Certified Ratnagiri Alphonso Mangoes online with ${data.deliveryTimeline} delivery to ${data.name}. Zero carbide, farm-direct to your door.`,
-        alternates: { canonical: `${BASE_URL}/mango/delivery/${data.slug}` },
+        title,
+        description,
+        alternates: { canonical: `${BASE_URL}/mango/delivery/${city}` },
     };
 }
 
@@ -29,9 +61,11 @@ export default async function CityDeliveryPage(
     { params }: { params: Promise<{ city: string }> }
 ) {
     const { city } = await params;
-    const data = deliveryCities[city as keyof typeof deliveryCities];
+    const resolved = resolveCityData(city);
 
-    if (!data) notFound();
+    if (!resolved) notFound();
+
+    const { city: data, variety } = resolved;
 
     return (
         <div style={{ paddingTop: "calc(var(--header-h) + 2rem)", paddingBottom: "6rem", background: "var(--an-cream)", minHeight: "100vh" }}>
@@ -42,10 +76,10 @@ export default async function CityDeliveryPage(
 
                 <div style={{ background: "white", borderRadius: "24px", padding: "3rem 2.5rem", border: "1px solid var(--an-border)", boxShadow: "0 12px 40px rgba(0,0,0,0.03)" }}>
                     <span style={{ fontSize: "0.75rem", fontWeight: 800, color: "var(--an-saffron)", textTransform: "uppercase", letterSpacing: "0.15em", display: "inline-flex", alignItems: "center", gap: "0.4rem" }}>
-                        <Zap size={14} /> Express Delivery to {data.name}
+                        <Zap size={14} /> {variety ? `${variety.name} for ${data.name}` : `Express Delivery to ${data.name}`}
                     </span>
                     <h1 style={{ fontFamily: "'Fraunces', serif", fontSize: "clamp(1.75rem, 4vw, 2.5rem)", fontWeight: 800, lineHeight: 1.2, margin: "1rem 0 1.5rem" }}>
-                        Fresh Ratnagiri Alphonso Mangoes Delivered in {data.name}
+                        {variety ? `Order Fresh Ratnagiri ${variety.name} in ${data.name}` : `Fresh Ratnagiri Alphonso Mangoes Delivered in ${data.name}`}
                     </h1>
                     <p style={{ fontSize: "1.1rem", color: "var(--an-muted)", lineHeight: 1.7, marginBottom: "2.5rem" }}>
                         Craving authentic Hapus in {data.name}? We ship GI-Certified, zero-carbide Alphonso mangoes directly from our Rathnagiri orchards to your doorstep.

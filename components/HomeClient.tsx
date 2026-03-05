@@ -81,13 +81,9 @@ function HeroSection() {
 
             {/* Giant italic serif */}
             <motion.h1 variants={reveal} className="h-display"
-              style={{ color: "white", maxWidth: "1000px", marginBottom: "0.5rem" }}>
+              style={{ color: "white", maxWidth: "1000px", marginBottom: "2rem" }}>
               Buy GI-Certified<br />
-              <span style={{ color: "var(--saffron-l)" }}>Ratnagiri Alphonso</span>
-            </motion.h1>
-            <motion.h1 variants={reveal} className="h-display"
-              style={{ color: "white", marginBottom: "2rem" }}>
-              Mangoes <em style={{ fontStyle: "normal", fontWeight: 300, color: "rgba(255,255,255,0.75)" }}>Online.</em>
+              <span style={{ color: "var(--saffron-l)" }}>Ratnagiri Alphonso</span> Mangoes <em style={{ fontStyle: "normal", fontWeight: 300, color: "rgba(255,255,255,0.75)" }}>Online.</em>
             </motion.h1>
 
             {/* Descriptor */}
@@ -160,8 +156,8 @@ function ProductsEditorial() {
               Season 2026 · Limited Harvest
             </motion.p>
             <motion.h2 variants={reveal} className="h-section">
-              Choose Your<br />
-              <span style={{ fontStyle: "italic", color: "var(--saffron)" }}>Grade</span>
+              Order Fresh Alphonso<br />
+              <span style={{ fontStyle: "italic", color: "var(--saffron)" }}>Mangoes Online</span>
             </motion.h2>
           </div>
           <motion.div variants={reveal}>
@@ -359,8 +355,8 @@ function FarmChapter() {
           <motion.div initial="hidden" whileInView="show" viewport={{ once: true, amount: 0.3 }} variants={slideRight}>
             <p className="eyebrow" style={{ marginBottom: "1.5rem" }}>The Origin</p>
             <h2 className="h-section" style={{ marginBottom: "1.5rem" }}>
-              Three<br />Generations,<br />
-              <span style={{ fontStyle: "italic", color: "var(--saffron)" }}>One Orchard.</span>
+              Why Ratnagiri Alphonso Is<br />
+              <span style={{ fontStyle: "italic", color: "var(--saffron)" }}>India's Most Prized Mango.</span>
             </h2>
             <div style={{ width: "48px", height: "2px", background: "var(--g-saffron)", marginBottom: "2rem", borderRadius: "2px" }} />
 
@@ -413,7 +409,7 @@ function ProcessSection() {
           style={{ display: "grid", gridTemplateColumns: "1fr", gap: "0", marginTop: "1rem" }}>
           <motion.div variants={reveal} style={{ marginBottom: "3.5rem" }}>
             <p className="eyebrow" style={{ marginBottom: "0.875rem" }}>The Aam Native Promise</p>
-            <h2 className="h-section">From tree to<br /><span style={{ fontStyle: "italic", color: "var(--saffron)" }}>your table</span></h2>
+            <h2 className="h-section">What Makes Our Mangoes<br /><span style={{ fontStyle: "italic", color: "var(--saffron)" }}>Different?</span></h2>
           </motion.div>
 
           {steps.map((s, i) => (
@@ -454,8 +450,8 @@ function TestimonialsSection() {
           <motion.p variants={reveal} className="eyebrow" style={{ marginBottom: "0.875rem" }}>What they say</motion.p>
           <motion.div variants={reveal} style={{ display: "flex", alignItems: "flex-end", justifyContent: "space-between", marginBottom: "3rem", flexWrap: "wrap", gap: "1rem" }}>
             <h2 className="h-section">
-              2,500+ families.<br />
-              <span style={{ fontStyle: "italic", color: "var(--saffron)" }}>One verdict.</span>
+              What Our<br />
+              <span style={{ fontStyle: "italic", color: "var(--saffron)" }}>Customers Are Saying.</span>
             </h2>
             <div style={{ display: "flex", alignItems: "center", gap: "0.5rem" }}>
               {[...Array(5)].map((_, i) => <Star key={i} size={18} fill="#FBBF24" color="#FBBF24" />)}

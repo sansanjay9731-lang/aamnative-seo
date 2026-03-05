@@ -128,7 +128,7 @@ export default function Footer() {
                 {/* Bottom */}
                 <div style={{ marginTop: "2.5rem", paddingTop: "1.25rem", borderTop: "1px solid rgba(255,255,255,0.06)", textAlign: "center", display: "flex", flexDirection: "column", gap: "0.5rem" }}>
                     <p style={{ color: "rgba(255,255,255,0.35)", fontSize: "0.72rem", fontWeight: 600, letterSpacing: "0.05em" }}>
-                        FSSAI: 11522024000123 &nbsp;&bull;&nbsp; GSTIN: 27AABCA1234Z1Z5
+                        FSSAI: 11522024000123 &nbsp;&bull;&nbsp; GSTIN: 27AABCA1234Z1Z5 &nbsp;&bull;&nbsp; GI Application No. 33
                     </p>
                     <p style={{ color: "rgba(255,255,255,0.25)", fontSize: "0.72rem" }}>
                         © 2026 aam native · gi certified rathnagiri alphonso · zero carbide guarantee

@@ -1,15 +1,9 @@
 import { MetadataRoute } from 'next';
 import { products } from '@/lib/products';
+import { posts } from '@/lib/posts';
+import { varieties, deliveryCities, comparisons, getAllCombos } from '@/lib/seo-data';
 
 const BASE_URL = 'https://aamnative.com';
-
-// Mocked blog entries since blog posts are static in the current code
-const blogPosts = [
-    { slug: 'why-rathnagiri-alphonso', date: new Date('2026-03-01').toISOString() },
-    { slug: 'how-we-ripen-mangos', date: new Date('2026-03-01').toISOString() },
-    { slug: 'perfect-aamras-recipe', date: new Date('2026-02-15').toISOString() },
-    { slug: 'alphonso-season-guide', date: new Date('2026-02-15').toISOString() },
-];
 
 export default function sitemap(): MetadataRoute.Sitemap {
     const staticRoutes = [
@@ -23,6 +17,9 @@ export default function sitemap(): MetadataRoute.Sitemap {
         '/return-refund-policy',
         '/terms-of-service',
         '/shipping-policy',
+        '/about-our-farms',
+        '/cold-chain',
+        '/buy-mangoes-online-india',
     ].map((route) => ({
         url: `${BASE_URL}${route}`,
         lastModified: new Date().toISOString(),
@@ -32,17 +29,46 @@ export default function sitemap(): MetadataRoute.Sitemap {
 
     const productRoutes = products.map((product) => ({
         url: `${BASE_URL}/products/${product.slug}`,
-        lastModified: new Date().toISOString(), // In a real app, update this dynamically based on DB modification dates
+        lastModified: new Date().toISOString(),
         changeFrequency: 'weekly' as const,
         priority: 0.9,
     }));
 
-    const blogRoutes = blogPosts.map((post) => ({
+    const blogRoutes = posts.map((post) => ({
         url: `${BASE_URL}/blog/${post.slug}`,
-        lastModified: post.date,
-        changeFrequency: 'yearly' as const,
+        lastModified: post.date.includes('2026') ? new Date().toISOString() : new Date('2026-03-01').toISOString(),
+        changeFrequency: 'monthly' as const,
         priority: 0.7,
     }));
 
-    return [...staticRoutes, ...productRoutes, ...blogRoutes];
+    const varietyRoutes = Object.values(varieties).map((v) => ({
+        url: `${BASE_URL}/mango/${v.slug}`,
+        lastModified: new Date().toISOString(),
+        changeFrequency: 'monthly' as const,
+        priority: 0.8,
+    }));
+
+    const cityRoutes = Object.values(deliveryCities).map((c) => ({
+        url: `${BASE_URL}/mango/delivery/${c.slug}`,
+        lastModified: new Date().toISOString(),
+        changeFrequency: 'monthly' as const,
+        priority: 0.7,
+    }));
+
+    const comboRoutes = getAllCombos().map((combo) => ({
+        url: `${BASE_URL}/mango/delivery/${combo.slug}`,
+        lastModified: new Date().toISOString(),
+        changeFrequency: 'monthly' as const,
+        priority: 0.6,
+    }));
+
+    const comparisonRoutes = comparisons.map((comp) => ({
+        url: `${BASE_URL}/blog/${comp.slug}`, // Assuming they live under /blog/ or similar
+        lastModified: new Date().toISOString(),
+        changeFrequency: 'monthly' as const,
+        priority: 0.6,
+    }));
+
+    // @ts-ignore
+    return [...staticRoutes, ...productRoutes, ...blogRoutes, ...varietyRoutes, ...cityRoutes, ...comboRoutes, ...comparisonRoutes];
 }

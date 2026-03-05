@@ -8,7 +8,30 @@ export const farmData = {
     harvestSeason: "Mid-March to Late June",
 };
 
-export const varieties = {
+export interface VarietyData {
+    name: string;
+    slug: string;
+    description: string;
+    brixRange: string;
+    seasonWindow: string;
+    pricingRange: string;
+    nutritionalData: {
+        calories: string;
+        vitaminC: string;
+        dietaryFiber: string;
+    };
+}
+
+export interface CityData {
+    name: string;
+    slug: string;
+    deliveryTimeline: string;
+    shippingPartners: string[];
+    popularPinCodes: string[];
+    volumeDemand: "Very High" | "High" | "Medium" | "Low";
+}
+
+export const varieties: Record<string, VarietyData> = {
     alphonso: {
         name: "Ratnagiri Alphonso (Hapus)",
         slug: "alphonso",
@@ -76,7 +99,7 @@ export const varieties = {
     }
 };
 
-export const deliveryCities = {
+export const deliveryCities: Record<string, CityData> = {
     mumbai: {
         name: "Mumbai",
         slug: "mumbai",
@@ -334,3 +357,263 @@ export const deliveryCities = {
         volumeDemand: "Low"
     }
 };
+
+// ── State groupings for state-level aggregation pages ──
+export const states: Record<string, { name: string; slug: string; cities: string[] }> = {
+    maharashtra: {
+        name: "Maharashtra",
+        slug: "maharashtra",
+        cities: ["mumbai", "pune", "nagpur", "nashik", "aurangabad", "kalyan", "vasai_virar"],
+    },
+    gujarat: {
+        name: "Gujarat",
+        slug: "gujarat",
+        cities: ["ahmedabad", "surat", "vadodara", "rajkot"],
+    },
+    delhi_ncr: {
+        name: "Delhi NCR",
+        slug: "delhi-ncr",
+        cities: ["delhi", "faridabad", "meerut"],
+    },
+    karnataka: {
+        name: "Karnataka",
+        slug: "karnataka",
+        cities: ["bangalore"],
+    },
+    telangana: {
+        name: "Telangana",
+        slug: "telangana",
+        cities: ["hyderabad"],
+    },
+    tamil_nadu: {
+        name: "Tamil Nadu",
+        slug: "tamil-nadu",
+        cities: ["chennai"],
+    },
+    west_bengal: {
+        name: "West Bengal",
+        slug: "west-bengal",
+        cities: ["kolkata"],
+    },
+    rajasthan: {
+        name: "Rajasthan",
+        slug: "rajasthan",
+        cities: ["jaipur"],
+    },
+    uttar_pradesh: {
+        name: "Uttar Pradesh",
+        slug: "uttar-pradesh",
+        cities: ["lucknow", "kanpur", "agra", "varanasi", "allahabad"],
+    },
+    madhya_pradesh: {
+        name: "Madhya Pradesh",
+        slug: "madhya-pradesh",
+        cities: ["indore", "bhopal"],
+    },
+    bihar: {
+        name: "Bihar",
+        slug: "bihar",
+        cities: ["patna"],
+    },
+    punjab: {
+        name: "Punjab",
+        slug: "punjab",
+        cities: ["ludhiana", "amritsar"],
+    },
+    jharkhand: {
+        name: "Jharkhand",
+        slug: "jharkhand",
+        cities: ["ranchi", "dhanbad"],
+    },
+    jammu_kashmir: {
+        name: "Jammu & Kashmir",
+        slug: "jammu-kashmir",
+        cities: ["srinagar"],
+    },
+};
+
+// ── Comparison data for variety-vs-variety pages ──
+export interface ComparisonPair {
+    slug: string;
+    varietyA: keyof typeof varieties;
+    varietyB: keyof typeof varieties;
+    title: string;
+    metaTitle: string;
+    metaDescription: string;
+    verdict: string;
+    comparisonPoints: { label: string; a: string; b: string }[];
+    faqs: { q: string; a: string }[];
+}
+
+export const comparisons: ComparisonPair[] = [
+    {
+        slug: "alphonso-vs-kesar",
+        varietyA: "alphonso",
+        varietyB: "kesar",
+        title: "Alphonso vs Kesar Mango: Which Is Better?",
+        metaTitle: "Alphonso vs Kesar Mango — Taste, Price & Nutrition Compared (2026)",
+        metaDescription: "Detailed comparison of Alphonso and Kesar mangoes. Compare taste, sweetness (Brix), price, season, origin, and nutritional value. Find out which mango is best for you.",
+        verdict: "Alphonso wins on aroma and sweetness intensity, Kesar wins on value and aamras texture. For premium gifting, choose Alphonso. For daily eating and recipes, Kesar is unbeatable.",
+        comparisonPoints: [
+            { label: "Origin", a: "Ratnagiri, Maharashtra", b: "Junagadh/Gir, Gujarat" },
+            { label: "Sweetness (Brix)", a: "18–22°", b: "16–19°" },
+            { label: "Season", a: "March–June", b: "April–July" },
+            { label: "Price Range", a: "₹1,500–₹3,500/doz", b: "₹800–₹1,800/doz" },
+            { label: "Texture", a: "Creamy, fiberless", b: "Smooth, slightly pulpy" },
+            { label: "Aroma", a: "Intense saffron-floral", b: "Sweet, mild fragrance" },
+            { label: "Best For", a: "Eating fresh, gifting", b: "Aamras, milkshakes, cooking" },
+            { label: "GI Certified", a: "Yes", b: "Yes" },
+        ],
+        faqs: [
+            { q: "Which is sweeter, Alphonso or Kesar?", a: "Alphonso is sweeter with Brix readings of 18–22° compared to Kesar's 16–19°. However, Kesar has a more balanced sweet-tangy profile that many people prefer in recipes." },
+            { q: "Why is Alphonso more expensive than Kesar?", a: "Alphonso commands a premium due to its limited growing region (Ratnagiri/Devgad), shorter harvest window, higher global demand, and GI-certified status. Kesar is more widely cultivated across Gujarat." },
+            { q: "Can I use Alphonso for aamras instead of Kesar?", a: "Yes, Alphonso makes excellent aamras. However, Kesar is traditionally preferred for aamras in Gujarat because its pulp-to-fiber ratio creates a thicker, smoother consistency." },
+        ],
+    },
+    {
+        slug: "alphonso-vs-dasheri",
+        varietyA: "alphonso",
+        varietyB: "dasheri",
+        title: "Alphonso vs Dasheri Mango: Complete Comparison",
+        metaTitle: "Alphonso vs Dasheri Mango — Taste, Price & Season Compared (2026)",
+        metaDescription: "Alphonso vs Dasheri mango comparison. Compare sweetness, fiber, pricing, season dates, and which variety is best for eating vs cooking. Expert guide.",
+        verdict: "Alphonso is the premium choice for pure eating and gifting. Dasheri offers excellent value and is the go-to mango for North Indian households.",
+        comparisonPoints: [
+            { label: "Origin", a: "Ratnagiri, Maharashtra", b: "Malihabad, Uttar Pradesh" },
+            { label: "Sweetness (Brix)", a: "18–22°", b: "14–18°" },
+            { label: "Season", a: "March–June", b: "May–July" },
+            { label: "Price Range", a: "₹1,500–₹3,500/doz", b: "₹600–₹1,400/doz" },
+            { label: "Texture", a: "Creamy, fiberless", b: "Smooth, fiberless, thin skin" },
+            { label: "Aroma", a: "Intense saffron-floral", b: "Sweet, mild honeyed" },
+            { label: "Best For", a: "Eating fresh, gifting", b: "Eating fresh, juice, desserts" },
+            { label: "Shelf Life", a: "3–5 days when ripe", b: "2–3 days when ripe" },
+        ],
+        faqs: [
+            { q: "Is Dasheri a good alternative to Alphonso?", a: "Dasheri is an excellent mango but has a different flavour profile. It's sweeter in a honeyed way vs Alphonso's saffron-floral complexity. For North Indian palates, Dasheri is often the preferred choice." },
+            { q: "Which mango has less fiber, Alphonso or Dasheri?", a: "Both are remarkably fiberless. Alphonso has a creamier, more buttery texture while Dasheri has a smooth, more liquid pulp." },
+        ],
+    },
+    {
+        slug: "alphonso-vs-langra",
+        varietyA: "alphonso",
+        varietyB: "langra",
+        title: "Alphonso vs Langra Mango: Which Should You Buy?",
+        metaTitle: "Alphonso vs Langra Mango — Taste, Season & Price Compared (2026)",
+        metaDescription: "Compare Alphonso and Langra mangoes — sweetness, season timing, price, fiber content, and best uses. Find out which variety suits your taste.",
+        verdict: "Alphonso arrives earlier in the season with premium sweetness. Langra extends the mango season into August with intense sweetness at a lower price point.",
+        comparisonPoints: [
+            { label: "Origin", a: "Ratnagiri, Maharashtra", b: "Varanasi, Uttar Pradesh" },
+            { label: "Sweetness (Brix)", a: "18–22°", b: "16–21°" },
+            { label: "Season", a: "March–June", b: "June–August" },
+            { label: "Price Range", a: "₹1,500–₹3,500/doz", b: "₹500–₹1,200/doz" },
+            { label: "Texture", a: "Creamy, fiberless", b: "Juicy, slightly fibrous" },
+            { label: "Skin When Ripe", a: "Saffron-yellow", b: "Stays green" },
+            { label: "Best For", a: "Eating fresh, gifting", b: "Eating fresh, making juice" },
+            { label: "Fiber Content", a: "Near zero", b: "Moderate" },
+        ],
+        faqs: [
+            { q: "Does Langra stay green when ripe?", a: "Yes, Langra is unique in that its skin remains green even when fully ripe. Don't judge ripeness by color — press gently and smell for a sweet aroma instead." },
+            { q: "Can I get Alphonso and Langra in the same month?", a: "There is a brief overlap in June. Alphonso season ends around mid-June while Langra starts arriving from mid-June. You can enjoy both varieties during this overlap window." },
+        ],
+    },
+    {
+        slug: "alphonso-vs-banganapalli",
+        varietyA: "alphonso",
+        varietyB: "banganapalli",
+        title: "Alphonso vs Banganapalli Mango: Head to Head",
+        metaTitle: "Alphonso vs Banganapalli (Safeda) Mango — Complete Comparison (2026)",
+        metaDescription: "Compare Alphonso and Banganapalli mangoes. Size, sweetness, price, fiber, and best uses compared. Find out which South Indian favourite wins.",
+        verdict: "Alphonso is the connoisseur's choice. Banganapalli is the family bulk-buy champion — bigger fruit at lower prices with excellent taste.",
+        comparisonPoints: [
+            { label: "Origin", a: "Ratnagiri, Maharashtra", b: "Banganapalle, Andhra Pradesh" },
+            { label: "Sweetness (Brix)", a: "18–22°", b: "15–18°" },
+            { label: "Season", a: "March–June", b: "April–June" },
+            { label: "Price Range", a: "₹1,500–₹3,500/doz", b: "₹400–₹1,000/doz" },
+            { label: "Size", a: "200–300g", b: "300–500g" },
+            { label: "Texture", a: "Creamy, fiberless", b: "Firm, fiberless, juicy" },
+            { label: "Skin", a: "Thin, delicate", b: "Smooth, spotless yellow" },
+            { label: "Best For", a: "Eating fresh, premium gifting", b: "Daily eating, juice, smoothies" },
+        ],
+        faqs: [
+            { q: "Is Banganapalli good for making mango juice?", a: "Excellent. Banganapalli's high juice content and firm texture make it ideal for juices, smoothies, and mango lassi. It's the most popular juice mango in South India." },
+            { q: "Which is bigger, Alphonso or Banganapalli?", a: "Banganapalli is significantly larger (300–500g vs 200–300g for Alphonso). You get more fruit per piece with Banganapalli." },
+        ],
+    },
+    {
+        slug: "kesar-vs-dasheri",
+        varietyA: "kesar",
+        varietyB: "dasheri",
+        title: "Kesar vs Dasheri Mango: Gujarat vs UP",
+        metaTitle: "Kesar vs Dasheri Mango — Taste, Price & Nutrition Compared (2026)",
+        metaDescription: "Compare Kesar and Dasheri mangoes — sweetness, season, price, fiber, origin, and best uses. Find out whether Gujarat's Queen or UP's favourite wins.",
+        verdict: "Kesar wins on colour, aamras potential, and aroma. Dasheri wins on price and availability. Both are excellent mid-range choices.",
+        comparisonPoints: [
+            { label: "Origin", a: "Junagadh/Gir, Gujarat", b: "Malihabad, Uttar Pradesh" },
+            { label: "Sweetness (Brix)", a: "16–19°", b: "14–18°" },
+            { label: "Season", a: "April–July", b: "May–July" },
+            { label: "Price Range", a: "₹800–₹1,800/doz", b: "₹600–₹1,400/doz" },
+            { label: "Colour", a: "Deep saffron-orange", b: "Golden yellow" },
+            { label: "Texture", a: "Smooth, pulpy", b: "Smooth, thin-skinned" },
+            { label: "Best For", a: "Aamras, milkshakes", b: "Eating fresh, juice, desserts" },
+            { label: "Aroma", a: "Distinctive saffron note", b: "Sweet, honeyed" },
+        ],
+        faqs: [
+            { q: "Which is better for aamras, Kesar or Dasheri?", a: "Kesar is the traditional choice for aamras in Gujarat and Maharashtra. Its thick pulp and saffron colour make it the gold standard. Dasheri works for aamras too, but the consistency is thinner." },
+            { q: "Are both Kesar and Dasheri available in summer?", a: "Yes, they overlap from May to July. Kesar starts a bit earlier (April) while Dasheri peaks in June–July." },
+        ],
+    },
+    {
+        slug: "ratnagiri-vs-devgad",
+        varietyA: "alphonso",
+        varietyB: "alphonso",
+        title: "Ratnagiri vs Devgad Alphonso: The Ultimate Hapus Battle",
+        metaTitle: "Ratnagiri vs Devgad Alphonso Mango — Which Is Better? (2026)",
+        metaDescription: "Compare Ratnagiri and Devgad Alphonso mangoes. Taste, aroma, season timing, shelf life, and price compared. Both are GI-certified Hapus — find out which is best.",
+        verdict: "Ratnagiri Alphonso has a more intense aroma and richer sweetness. Devgad Alphonso has firmer flesh and longer shelf life. Both are authentic GI-certified Hapus.",
+        comparisonPoints: [
+            { label: "District", a: "Ratnagiri", b: "Sindhudurg (Devgad)" },
+            { label: "GI Certified", a: "Yes", b: "Yes" },
+            { label: "Season Start", a: "Mid-March", b: "Early April" },
+            { label: "Season End", a: "Late May", b: "Mid-June" },
+            { label: "Aroma", a: "Intense, complex saffron-floral", b: "Moderate, clean saffron" },
+            { label: "Texture", a: "Very creamy, thin skin", b: "Slightly firmer, thicker skin" },
+            { label: "Shelf Life", a: "3–5 days", b: "5–7 days" },
+            { label: "Best For", a: "Immediate eating, connoisseurs", b: "Shipping long distances, bulk orders" },
+        ],
+        faqs: [
+            { q: "Is Ratnagiri Alphonso better than Devgad?", a: "Neither is objectively 'better' — they are both GI-certified Hapus from the Konkan coast. Ratnagiri is prized for more intense aroma and creamier flesh. Devgad is valued for better shelf life and firmness. Aam Native sources exclusively from Ratnagiri for peak flavour." },
+            { q: "Why does Ratnagiri Alphonso have stronger aroma?", a: "Ratnagiri's specific microclimate — higher humidity, closer proximity to the coast, and the unique mineral composition of its laterite soil — produces higher concentrations of volatile aromatic compounds in the fruit." },
+            { q: "Which Alphonso is easier to ship without damage?", a: "Devgad Alphonso ships better due to firmer flesh and thicker skin. Ratnagiri Alphonso requires more careful handling, which is why Aam Native uses temperature-controlled packaging for every shipment." },
+        ],
+    },
+];
+
+// ── Helper: Get all variety slugs ──
+export const varietySlugs = Object.values(varieties).map((v) => v.slug);
+
+// ── Helper: Get all city slugs ──
+export const citySlugs = Object.values(deliveryCities).map((c) => c.slug);
+
+// ── Helper: Generate combo pairs (city x variety) ──
+// Only generate combos for Alphonso and Kesar (highest search volume)
+export const comboVarieties = ["alphonso", "kesar"] as const;
+
+export function getComboSlug(varietySlug: string, citySlug: string): string {
+    return `${varietySlug}-mango-${citySlug}-delivery`;
+}
+
+export function getAllCombos(): { varietyKey: string; cityKey: string; slug: string }[] {
+    const combos: { varietyKey: string; cityKey: string; slug: string }[] = [];
+    for (const vKey of comboVarieties) {
+        // @ts-ignore
+        const variety = varieties[vKey];
+        for (const [cKey, city] of Object.entries(deliveryCities)) {
+            combos.push({
+                varietyKey: vKey,
+                cityKey: cKey,
+                slug: getComboSlug(variety.slug, city.slug),
+            });
+        }
+    }
+    return combos;
+}
