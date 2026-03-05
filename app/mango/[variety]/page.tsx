@@ -7,7 +7,9 @@ import { varieties } from "@/lib/seo-data";
 const BASE_URL = "https://aamnative.com";
 
 export function generateStaticParams() {
-    return Object.keys(varieties).map((variety) => ({ variety }));
+    return Object.keys(varieties)
+        .filter((v) => v !== "alphonso")
+        .map((variety) => ({ variety }));
 }
 
 export async function generateMetadata(
@@ -29,17 +31,6 @@ export default async function VarietyPage(
     { params }: { params: Promise<{ variety: string }> }
 ) {
     const { variety } = await params;
-
-    // Explicitly handle "alphonso" mapping to the root pillar page if someone navigates here directly
-    if (variety === "alphonso") {
-        return (
-            <div style={{ padding: "8rem 2rem", textAlign: "center", minHeight: "100vh" }}>
-                <h1>Redirecting to Alphonso...</h1>
-                <meta httpEquiv="refresh" content={`0;url=/mango/alphonso`} />
-            </div>
-        )
-    }
-
     const data = varieties[variety as keyof typeof varieties];
     if (!data) notFound();
 
