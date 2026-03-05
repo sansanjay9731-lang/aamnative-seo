@@ -43,7 +43,7 @@ export async function generateMetadata(
     const { city: cityData, variety } = resolved;
 
     const title = variety
-        ? `Buy Ratnagiri ${variety.name} Mangoes Online in ${cityData.name} | Direct Delivery`
+        ? `Buy ${variety.name} Mangoes Online in ${cityData.name} | Direct Delivery`
         : `Buy Ratnagiri Alphonso Mangoes Online in ${cityData.name} | Fast Delivery`;
 
     const description = variety
@@ -79,7 +79,7 @@ export default async function CityDeliveryPage(
                         <Zap size={14} /> {variety ? `${variety.name} for ${data.name}` : `Express Delivery to ${data.name}`}
                     </span>
                     <h1 style={{ fontFamily: "'Fraunces', serif", fontSize: "clamp(1.75rem, 4vw, 2.5rem)", fontWeight: 800, lineHeight: 1.2, margin: "1rem 0 1.5rem" }}>
-                        {variety ? `Order Fresh Ratnagiri ${variety.name} in ${data.name}` : `Fresh Ratnagiri Alphonso Mangoes Delivered in ${data.name}`}
+                        {variety ? `Order Fresh ${variety.name} in ${data.name}` : `Fresh Ratnagiri Alphonso Mangoes Delivered in ${data.name}`}
                     </h1>
                     <p style={{ fontSize: "1.1rem", color: "var(--an-muted)", lineHeight: 1.7, marginBottom: "2.5rem" }}>
                         Craving authentic Hapus in {data.name}? We ship GI-Certified, zero-carbide Alphonso mangoes directly from our Rathnagiri orchards to your doorstep.
