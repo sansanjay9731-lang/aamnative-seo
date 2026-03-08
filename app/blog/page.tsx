@@ -66,7 +66,7 @@ export default function BlogPage() {
                 <h1 style={{ fontFamily: "'Fraunces', serif", fontSize: "2rem", fontWeight: 700, marginBottom: "0.5rem" }}>
                     From the Farm
                 </h1>
-                <p style={{ color: "var(--muted)", fontSize: "0.9rem", lineHeight: 1.7, marginBottom: "2.5rem" }}>
+                <p style={{ color: "var(--an-muted)", fontSize: "0.9rem", lineHeight: 1.7, marginBottom: "2.5rem" }}>
                     Stories about mangos, recipes, and life on a Rathnagiri orchard
                 </p>
 
@@ -82,13 +82,13 @@ export default function BlogPage() {
                                 </div>
                                 <div style={{ padding: "1.5rem", flex: 1, display: "flex", flexDirection: "column" }}>
                                     <div style={{ display: "flex", gap: "0.75rem", marginBottom: "0.75rem" }}>
-                                        <span style={{ fontSize: "0.7rem", color: "var(--muted)", fontWeight: 600 }}>{post.date}</span>
+                                        <span style={{ fontSize: "0.7rem", color: "var(--an-muted)", fontWeight: 600 }}>{post.date}</span>
                                         <span style={{ fontSize: "0.7rem", color: "var(--saffron)", fontWeight: 700 }}>{post.readTime}</span>
                                     </div>
                                     <h2 style={{ fontFamily: "'Fraunces', serif", fontSize: "1.05rem", fontWeight: 700, lineHeight: 1.3, marginBottom: "0.5rem" }}>
                                         {post.title}
                                     </h2>
-                                    <p style={{ fontSize: "0.8rem", color: "var(--muted)", lineHeight: 1.6, marginBottom: "1rem", flex: 1 }}>
+                                    <p style={{ fontSize: "0.8rem", color: "var(--an-muted)", lineHeight: 1.6, marginBottom: "1rem", flex: 1 }}>
                                         {post.excerpt}
                                     </p>
                                     <span style={{ fontSize: "0.75rem", fontWeight: 800, color: "var(--saffron)", textTransform: "uppercase", letterSpacing: "0.05em", marginTop: "auto" }}>

@@ -1,6 +1,6 @@
 export default function PrivacyPolicyPage() {
     const h2: React.CSSProperties = { fontFamily: "'Fraunces', serif", fontSize: "1.25rem", fontWeight: 700, margin: "2rem 0 0.75rem" };
-    const p: React.CSSProperties = { color: "var(--muted)", fontSize: "0.875rem", lineHeight: 1.8, marginBottom: "0.75rem" };
+    const p: React.CSSProperties = { color: "var(--an-muted)", fontSize: "0.875rem", lineHeight: 1.8, marginBottom: "0.75rem" };
 
     return (
         <div style={{ paddingTop: "calc(var(--header-h) + 2rem)" }}>

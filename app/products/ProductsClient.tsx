@@ -68,7 +68,7 @@ export default function ProductsPage() {
                                     padding: "0.75rem 1.375rem",
                                     background: "none", border: "none", cursor: "pointer",
                                     fontSize: "0.875rem", fontWeight: filter === g ? 800 : 500,
-                                    color: filter === g ? "var(--text)" : "var(--muted)",
+                                    color: filter === g ? "var(--text)" : "var(--an-muted)",
                                     borderBottom: filter === g ? "2.5px solid var(--saffron)" : "2.5px solid transparent",
                                     marginBottom: "-1.5px", transition: "all 0.2s",
                                     fontFamily: "'Plus Jakarta Sans', sans-serif",
@@ -120,7 +120,7 @@ export default function ProductsPage() {
 
                                     {/* Info */}
                                     <div style={{ padding: "1.5rem" }}>
-                                        <p style={{ fontSize: "0.6rem", fontWeight: 800, letterSpacing: "0.18em", textTransform: "uppercase", color: "var(--muted)", marginBottom: "0.35rem" }}>
+                                        <p style={{ fontSize: "0.6rem", fontWeight: 800, letterSpacing: "0.18em", textTransform: "uppercase", color: "var(--an-muted)", marginBottom: "0.35rem" }}>
                                             {product.pieces} pcs · {product.boxWeight}
                                         </p>
                                         <h2 className="serif" style={{ fontSize: "1.2rem", fontWeight: 700, marginBottom: "0.375rem", lineHeight: 1.25 }}>
@@ -133,7 +133,7 @@ export default function ProductsPage() {
                                             <span className="serif" style={{ fontSize: "1.875rem", fontWeight: 800, color: accentColor, lineHeight: 1 }}>
                                                 ₹{product.price.toLocaleString("en-IN")}
                                             </span>
-                                            <span style={{ fontSize: "0.875rem", textDecoration: "line-through", color: "var(--muted)", opacity: 0.6 }}>
+                                            <span style={{ fontSize: "0.875rem", textDecoration: "line-through", color: "var(--an-muted)", opacity: 0.6 }}>
                                                 ₹{product.originalPrice.toLocaleString("en-IN")}
                                             </span>
                                             <span style={{ fontSize: "0.65rem", fontWeight: 800, color: "#15803D", background: "#DCFCE7", borderRadius: "6px", padding: "0.15rem 0.5rem" }}>

@@ -141,7 +141,7 @@ export default async function BlogPostPage(
                     dangerouslySetInnerHTML={{ __html: JSON.stringify(buildComparisonSchema(comparison)) }}
                 />
                 <div className="container" style={{ maxWidth: "800px" }}>
-                    <Link href="/blog" style={{ display: "inline-flex", alignItems: "center", gap: "0.5rem", fontSize: "0.85rem", fontWeight: 700, textDecoration: "none", color: "var(--muted)", marginBottom: "2rem" }}>
+                    <Link href="/blog" style={{ display: "inline-flex", alignItems: "center", gap: "0.5rem", fontSize: "0.85rem", fontWeight: 700, textDecoration: "none", color: "var(--an-muted)", marginBottom: "2rem" }}>
                         <ArrowLeft size={14} /> Back to Blog
                     </Link>
 
@@ -210,14 +210,14 @@ export default async function BlogPostPage(
             />
 
             <div className="container" style={{ maxWidth: "800px" }}>
-                <Link href="/blog" style={{ display: "inline-flex", alignItems: "center", gap: "0.5rem", fontSize: "0.85rem", fontWeight: 700, textDecoration: "none", color: "var(--muted)", marginBottom: "2rem" }}>
+                <Link href="/blog" style={{ display: "inline-flex", alignItems: "center", gap: "0.5rem", fontSize: "0.85rem", fontWeight: 700, textDecoration: "none", color: "var(--an-muted)", marginBottom: "2rem" }}>
                     <ArrowLeft size={14} /> Back to Blog
                 </Link>
 
                 <div style={{ display: "flex", gap: "1rem", marginBottom: "1.5rem" }}>
                     <span style={{ fontSize: "0.8rem", color: "var(--saffron)", fontWeight: 800, textTransform: "uppercase", letterSpacing: "0.05em" }}>{post!.date}</span>
-                    <span style={{ fontSize: "0.8rem", color: "var(--muted)", fontWeight: 600 }}>·</span>
-                    <span style={{ fontSize: "0.8rem", color: "var(--muted)", fontWeight: 600 }}>{post!.readTime}</span>
+                    <span style={{ fontSize: "0.8rem", color: "var(--an-muted)", fontWeight: 600 }}>·</span>
+                    <span style={{ fontSize: "0.8rem", color: "var(--an-muted)", fontWeight: 600 }}>{post!.readTime}</span>
                 </div>
 
                 <h1 style={{ fontFamily: "'Fraunces', serif", fontSize: "clamp(2rem, 5vw, 3rem)", fontWeight: 800, lineHeight: 1.1, marginBottom: "1.5rem" }}>
@@ -230,7 +230,7 @@ export default async function BlogPostPage(
                     </div>
                     <div>
                         <p style={{ fontWeight: 700, fontSize: "0.9rem" }}>{post!.author}</p>
-                        <p style={{ fontSize: "0.75rem", color: "var(--muted)" }}>Aam Native</p>
+                        <p style={{ fontSize: "0.75rem", color: "var(--an-muted)" }}>Aam Native</p>
                     </div>
                 </div>
 

@@ -224,14 +224,14 @@ function EditorialProductCard({ product, index }: { product: typeof products[0];
         <div style={{ position: "absolute", bottom: "1rem", right: "1rem", display: "flex", alignItems: "center", gap: "0.25rem", background: "rgba(255,255,255,0.95)", borderRadius: "100px", padding: "0.25rem 0.7rem" }}>
           <Star size={11} fill="#FBBF24" color="#FBBF24" />
           <span style={{ fontSize: "0.74rem", fontWeight: 800, color: "var(--text)" }}>{product.rating}</span>
-          <span style={{ fontSize: "0.68rem", color: "var(--muted)" }}>({product.reviewCount})</span>
+          <span style={{ fontSize: "0.68rem", color: "var(--an-muted)" }}>({product.reviewCount})</span>
         </div>
       </div>
 
       {/* Content */}
       <div style={{ padding: "1.5rem" }}>
         {/* Eyebrow */}
-        <p style={{ fontSize: "0.6rem", fontWeight: 800, letterSpacing: "0.18em", textTransform: "uppercase", color: "var(--muted)", marginBottom: "0.35rem" }}>
+        <p style={{ fontSize: "0.6rem", fontWeight: 800, letterSpacing: "0.18em", textTransform: "uppercase", color: "var(--an-muted)", marginBottom: "0.35rem" }}>
           {product.pieces} pcs · {product.boxWeight}
         </p>
 
@@ -247,7 +247,7 @@ function EditorialProductCard({ product, index }: { product: typeof products[0];
           <span className="serif" style={{ fontSize: "1.75rem", fontWeight: 800, color: gradeColor }}>
             ₹{product.price.toLocaleString("en-IN")}
           </span>
-          <span style={{ fontSize: "0.875rem", textDecoration: "line-through", color: "var(--muted)", opacity: 0.7 }}>
+          <span style={{ fontSize: "0.875rem", textDecoration: "line-through", color: "var(--an-muted)", opacity: 0.7 }}>
             ₹{product.originalPrice.toLocaleString("en-IN")}
           </span>
         </div>
@@ -346,8 +346,8 @@ function FarmChapter() {
                 display: "flex", flexDirection: "column", gap: "0.2rem"
               }}>
               <span className="serif" style={{ fontSize: "2.5rem", fontWeight: 800, color: "var(--saffron)", lineHeight: 1 }}>50+</span>
-              <span style={{ fontSize: "0.7rem", fontWeight: 800, color: "var(--muted)", textTransform: "uppercase", letterSpacing: "0.1em" }}>Years of craft</span>
-              <span style={{ fontSize: "0.72rem", color: "var(--muted)", marginTop: "0.1rem" }}>Est. 1968 · Ratnagiri</span>
+              <span style={{ fontSize: "0.7rem", fontWeight: 800, color: "var(--an-muted)", textTransform: "uppercase", letterSpacing: "0.1em" }}>Years of craft</span>
+              <span style={{ fontSize: "0.72rem", color: "var(--an-muted)", marginTop: "0.1rem" }}>Est. 1968 · Ratnagiri</span>
             </motion.div>
           </motion.div>
 
@@ -479,7 +479,7 @@ function TestimonialsSection() {
                   </div>
                   <div>
                     <p style={{ fontWeight: 700, fontSize: "0.875rem" }}>{r.name}</p>
-                    <p style={{ fontSize: "0.72rem", color: "var(--muted)" }}>{r.loc} · Verified Purchase</p>
+                    <p style={{ fontSize: "0.72rem", color: "var(--an-muted)" }}>{r.loc} · Verified Purchase</p>
                   </div>
                 </div>
                 <div style={{ display: "flex", gap: "2px" }}>

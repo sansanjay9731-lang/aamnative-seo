@@ -62,7 +62,7 @@ export default function AboutPage() {
                             "In 2010, I started delivering directly to four families in Pune. Word spread. By 2015, we had 200 families. Today, Aam Native delivers to 2,500+ households across 18 cities directly, with our name and our phone number on every box.",
                             "Our promise is simple: if the mango doesn't eat like the best you've ever had, you get your money back. No one has asked us for it since 2022.",
                         ].map((para, i) => (
-                            <motion.p key={i} variants={fadeUp} style={{ color: "var(--muted)", fontSize: "0.9375rem", lineHeight: 1.8, marginBottom: "1.125rem" }}>
+                            <motion.p key={i} variants={fadeUp} style={{ color: "var(--an-muted)", fontSize: "0.9375rem", lineHeight: 1.8, marginBottom: "1.125rem" }}>
                                 {para}
                             </motion.p>
                         ))}
@@ -178,7 +178,7 @@ export default function AboutPage() {
                                 viewport={{ once: true }} transition={{ delay: i * 0.09 }}
                                 style={{ textAlign: "center", padding: "2rem 1rem" }}>
                                 <p style={{ fontFamily: "'Fraunces', serif", fontSize: "clamp(2rem, 5vw, 3rem)", fontWeight: 800, color: "var(--saffron)", lineHeight: 1 }}>{s.val}</p>
-                                <p style={{ fontSize: "0.72rem", fontWeight: 700, color: "var(--muted)", marginTop: "0.5rem", textTransform: "uppercase", letterSpacing: "0.12em" }}>{s.label}</p>
+                                <p style={{ fontSize: "0.72rem", fontWeight: 700, color: "var(--an-muted)", marginTop: "0.5rem", textTransform: "uppercase", letterSpacing: "0.12em" }}>{s.label}</p>
                             </motion.div>
                         ))}
                     </div>

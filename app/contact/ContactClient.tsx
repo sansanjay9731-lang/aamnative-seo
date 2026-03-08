@@ -28,7 +28,7 @@ export default function ContactPage() {
                 <h1 style={{ fontFamily: "'Fraunces', serif", fontSize: "2rem", fontWeight: 700, marginBottom: "0.5rem" }}>
                     Contact Us
                 </h1>
-                <p style={{ color: "var(--muted)", fontSize: "0.9rem", lineHeight: 1.7, marginBottom: "2rem" }}>
+                <p style={{ color: "var(--an-muted)", fontSize: "0.9rem", lineHeight: 1.7, marginBottom: "2rem" }}>
                     Have a question about your order or want to buy in bulk? We'd love to hear from you.
                 </p>
 
@@ -46,7 +46,7 @@ export default function ContactPage() {
                             }}>
                             <div style={{ fontSize: "1.5rem", marginBottom: "0.5rem" }}>{c.icon}</div>
                             <p style={{ fontWeight: 700, fontSize: "0.8rem", color: "var(--text)", marginBottom: "0.25rem" }}>{c.label}</p>
-                            <p style={{ fontSize: "0.75rem", color: "var(--muted)" }}>{c.value}</p>
+                            <p style={{ fontSize: "0.75rem", color: "var(--an-muted)" }}>{c.value}</p>
                         </a>
                     ))}
                 </div>

@@ -39,7 +39,7 @@ export default function CartDrawer() {
                                 <h2 className="serif" style={{ fontSize: "1.125rem", fontWeight: 700 }}>
                                     Your Cart
                                     {items.length > 0 && (
-                                        <span style={{ fontFamily: "'Plus Jakarta Sans', sans-serif", fontWeight: 500, fontSize: "0.875rem", color: "var(--muted)", marginLeft: "0.375rem" }}>
+                                        <span style={{ fontFamily: "'Plus Jakarta Sans', sans-serif", fontWeight: 500, fontSize: "0.875rem", color: "var(--an-muted)", marginLeft: "0.375rem" }}>
                                             ({items.length})
                                         </span>
                                     )}
@@ -54,7 +54,7 @@ export default function CartDrawer() {
                         {/* ── Free delivery bar ── */}
                         {items.length > 0 && (
                             <div style={{ padding: "0.875rem 1.5rem", borderBottom: "1px solid var(--border)" }}>
-                                <p style={{ fontSize: "0.78rem", fontWeight: 600, color: remaining === 0 ? "#15803D" : "var(--muted)", marginBottom: "0.5rem" }}>
+                                <p style={{ fontSize: "0.78rem", fontWeight: 600, color: remaining === 0 ? "#15803D" : "var(--an-muted)", marginBottom: "0.5rem" }}>
                                     {remaining === 0 ? "🎉 You've unlocked free delivery!" : (
                                         <>Add <span style={{ color: "var(--saffron)", fontWeight: 800 }}>₹{remaining.toLocaleString("en-IN")}</span> more for free delivery</>
                                     )}
@@ -135,7 +135,7 @@ export default function CartDrawer() {
                         {items.length > 0 && (
                             <div style={{ padding: "1.375rem 1.5rem", borderTop: "1px solid var(--border)", background: "var(--parchment)" }}>
                                 <div style={{ display: "flex", justifyContent: "space-between", alignItems: "baseline", marginBottom: "1.25rem" }}>
-                                    <span style={{ fontWeight: 600, color: "var(--muted)", fontSize: "0.875rem" }}>Subtotal</span>
+                                    <span style={{ fontWeight: 600, color: "var(--an-muted)", fontSize: "0.875rem" }}>Subtotal</span>
                                     <span className="serif" style={{ fontSize: "1.875rem", fontWeight: 800, color: "var(--saffron)" }}>
                                         ₹{subtotal.toLocaleString("en-IN")}
                                     </span>
@@ -148,7 +148,7 @@ export default function CartDrawer() {
                                 >
                                     Proceed to Checkout <ArrowRight size={15} />
                                 </Link>
-                                <p style={{ textAlign: "center", fontSize: "0.7rem", color: "var(--muted)", marginTop: "0.875rem" }}>
+                                <p style={{ textAlign: "center", fontSize: "0.7rem", color: "var(--an-muted)", marginTop: "0.875rem" }}>
                                     🔒 Secure checkout · 100% freshness guarantee
                                 </p>
                             </div>

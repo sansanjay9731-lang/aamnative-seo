@@ -240,19 +240,19 @@ body {
 .body-lg {
   font-size: 1.0625rem;
   line-height: 1.8;
-  color: var(--muted);
+  color: var(--an-muted);
 }
 
 .body {
   font-size: 0.9375rem;
   line-height: 1.75;
-  color: var(--muted);
+  color: var(--an-muted);
 }
 
 .body-sm {
   font-size: 0.8125rem;
   line-height: 1.7;
-  color: var(--muted);
+  color: var(--an-muted);
 }
 
 /* ══════════════════════════════════════════

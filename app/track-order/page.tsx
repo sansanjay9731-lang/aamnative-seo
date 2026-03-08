@@ -16,7 +16,7 @@ export default function TrackOrderPage() {
                 <h1 style={{ fontFamily: "'Fraunces', serif", fontSize: "2rem", fontWeight: 700, marginBottom: "0.5rem" }}>
                     Track My Order
                 </h1>
-                <p style={{ color: "var(--muted)", fontSize: "0.9rem", lineHeight: 1.7, marginBottom: "2rem" }}>
+                <p style={{ color: "var(--an-muted)", fontSize: "0.9rem", lineHeight: 1.7, marginBottom: "2rem" }}>
                     Enter your order ID to check the delivery status
                 </p>
 
@@ -50,7 +50,7 @@ export default function TrackOrderPage() {
                         <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center", marginBottom: "1.5rem" }}>
                             <div>
                                 <p style={{ fontWeight: 800, fontSize: "0.85rem" }}>Order #{orderId}</p>
-                                <p style={{ color: "var(--muted)", fontSize: "0.75rem" }}>Placed on Feb 24, 2026</p>
+                                <p style={{ color: "var(--an-muted)", fontSize: "0.75rem" }}>Placed on Feb 24, 2026</p>
                             </div>
                             <div style={{
                                 padding: "0.35rem 0.75rem", borderRadius: "100px",
@@ -78,15 +78,15 @@ export default function TrackOrderPage() {
                                     {i < 4 && <div style={{ width: "2px", height: "28px", background: s.done ? "#16A34A" : "#E4DCD0" }} />}
                                 </div>
                                 <div style={{ paddingBottom: "0.5rem" }}>
-                                    <p style={{ fontWeight: 700, fontSize: "0.8rem", color: s.done ? "var(--text)" : "var(--muted)" }}>{s.step}</p>
-                                    {s.time && <p style={{ fontSize: "0.7rem", color: "var(--muted)" }}>{s.time}</p>}
+                                    <p style={{ fontWeight: 700, fontSize: "0.8rem", color: s.done ? "var(--text)" : "var(--an-muted)" }}>{s.step}</p>
+                                    {s.time && <p style={{ fontSize: "0.7rem", color: "var(--an-muted)" }}>{s.time}</p>}
                                 </div>
                             </div>
                         ))}
                     </div>
                 )}
 
-                <p style={{ marginTop: "2rem", fontSize: "0.8rem", color: "var(--muted)" }}>
+                <p style={{ marginTop: "2rem", fontSize: "0.8rem", color: "var(--an-muted)" }}>
                     Can&apos;t find your order? Contact us on{" "}
                     <a href="https://wa.me/919964984695" target="_blank" rel="noopener noreferrer" style={{ color: "#25D366", fontWeight: 700 }}>WhatsApp</a>
                     {" "}or call <a href="tel:+919964984695" style={{ color: "var(--saffron)", fontWeight: 700 }}>+91 99649 84695</a>

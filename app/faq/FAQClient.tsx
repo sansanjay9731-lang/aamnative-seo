@@ -35,7 +35,7 @@ export default function FAQClient({ faqs }: { faqs: FAQCategory[] }) {
           }}>
             Frequently Asked Questions
           </h1>
-          <p style={{ color: "var(--muted)", fontSize: "0.9375rem", lineHeight: 1.75, maxWidth: "560px" }}>
+          <p style={{ color: "var(--an-muted)", fontSize: "0.9375rem", lineHeight: 1.75, maxWidth: "560px" }}>
             Everything you need to know about GI-certified Ratnagiri Alphonso mangoes —
             carbide-free ripening, season dates, grades, delivery, and storage.
           </p>
@@ -111,7 +111,7 @@ export default function FAQClient({ faqs }: { faqs: FAQCategory[] }) {
                           borderRadius: "50%",
                           background: isOpen ? "var(--saffron)" : "var(--border-light, #f0ece6)",
                           display: "flex", alignItems: "center", justifyContent: "center",
-                          fontSize: "0.75rem", color: isOpen ? "white" : "var(--muted)",
+                          fontSize: "0.75rem", color: isOpen ? "white" : "var(--an-muted)",
                           transition: "all 0.2s", transform: isOpen ? "rotate(45deg)" : "none",
                           marginTop: "2px",
                         }}>
@@ -126,7 +126,7 @@ export default function FAQClient({ faqs }: { faqs: FAQCategory[] }) {
                         }}>
                           <p style={{
                             fontSize: "0.875rem", lineHeight: 1.8,
-                            color: "var(--muted)", paddingTop: "1rem",
+                            color: "var(--an-muted)", paddingTop: "1rem",
                           }}>
                             {item.a}
                           </p>
@@ -152,7 +152,7 @@ export default function FAQClient({ faqs }: { faqs: FAQCategory[] }) {
           }}>
             Still have questions?
           </p>
-          <p style={{ color: "var(--muted)", fontSize: "0.875rem", marginBottom: "1.25rem" }}>
+          <p style={{ color: "var(--an-muted)", fontSize: "0.875rem", marginBottom: "1.25rem" }}>
             Our farm team is available on WhatsApp daily during the season.
           </p>
           <div style={{ display: "flex", gap: "0.75rem", justifyContent: "center", flexWrap: "wrap" }}>
