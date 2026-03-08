@@ -28,7 +28,7 @@ export default function ProduceGallery() {
                         Look at our <span style={{ color: "var(--grove, #1F5C3A)", fontStyle: "italic" }}>Produce</span>
                     </h2>
                     <p style={{
-                        color: "var(--muted, #666)", fontSize: "0.95rem", marginTop: "1rem",
+                        color: "var(--an-muted, #6B6555)", fontSize: "0.95rem", marginTop: "1rem",
                         maxWidth: "500px", marginInline: "auto", lineHeight: 1.6
                     }}>
                         Real photos from our partner farms in Rathnagiri. Freshly harvested,
@@ -121,7 +121,7 @@ export default function ProduceGallery() {
 
                 {/* Bottom Trust Line */}
                 <p style={{
-                    textAlign: "center", marginTop: "3rem", color: "var(--muted, #888)",
+                    textAlign: "center", marginTop: "3rem", color: "var(--an-muted, #6B6555)",
                     fontSize: "0.75rem", fontStyle: "italic"
                 }}>
                     What you see is exactly what we deliver. No stock photos, just pure Aam Native quality.
