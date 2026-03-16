@@ -10,8 +10,10 @@ import { useCart } from "@/context/CartContext";
 export default function CartDrawer() {
     const { isOpen, closeCart, items, removeItem, updateQty, subtotal } = useCart();
     const freeAt = 999;
+    const upperLimit = 10000;
     const progress = Math.min(100, (subtotal / freeAt) * 100);
     const remaining = Math.max(0, freeAt - subtotal);
+    const isOverLimit = subtotal > upperLimit;
 
     return (
         <AnimatePresence>
@@ -54,8 +56,10 @@ export default function CartDrawer() {
                         {/* ── Free delivery bar ── */}
                         {items.length > 0 && (
                             <div style={{ padding: "0.875rem 1.5rem", borderBottom: "1px solid var(--border)" }}>
-                                <p style={{ fontSize: "0.78rem", fontWeight: 600, color: remaining === 0 ? "#15803D" : "var(--an-muted)", marginBottom: "0.5rem" }}>
-                                    {remaining === 0 ? "🎉 You've unlocked free delivery!" : (
+                                <p style={{ fontSize: "0.78rem", fontWeight: 600, color: (remaining === 0 && !isOverLimit) ? "#15803D" : "var(--an-muted)", marginBottom: "0.5rem" }}>
+                                    {isOverLimit ? (
+                                        <>Contact for <span style={{ color: "var(--saffron)", fontWeight: 800 }}>bulk shipping</span> rates (Order &gt; ₹10k)</>
+                                    ) : remaining === 0 ? "🎉 You've unlocked free delivery!" : (
                                         <>Add <span style={{ color: "var(--saffron)", fontWeight: 800 }}>₹{remaining.toLocaleString("en-IN")}</span> more for free delivery</>
                                     )}
                                 </p>

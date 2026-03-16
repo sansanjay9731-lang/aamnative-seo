@@ -15,7 +15,7 @@ export default function ShippingPolicyPage() {
                 <p style={p}>Orders placed before 2 PM are dispatched the same day. Delivery typically takes 24 to 48 hours for metro cities (Mumbai, Pune, Delhi, Bangalore, Hyderabad, Chennai, Kolkata) and 48 to 72 hours for other locations.</p>
 
                 <h2 style={h2}>Shipping Charges</h2>
-                <p style={p}>We offer free shipping on all orders above ₹999. For orders below ₹999, a flat delivery charge of ₹99 applies.</p>
+                <p style={p}>We offer free shipping on all orders above ₹999 to ₹10,000. For orders below ₹999, a flat delivery charge of ₹99 applies.</p>
 
                 <h2 style={h2}>Packaging</h2>
                 <p style={p}>Each box is carefully packed with natural hay bedding and foam separators to prevent bruising during transit. Premium grade orders come in gift-quality wooden-finish boxes.</p>

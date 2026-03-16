@@ -119,7 +119,7 @@ const faqs = [
       },
       {
         q: "Do you deliver Alphonso mangoes across all of India?",
-        a: "Yes. Aam Native delivers to 500+ pincodes across India, including all major metros (Mumbai, Delhi, Bangalore, Chennai, Hyderabad, Pune, Kolkata) and Tier-2 cities. Delivery typically takes 2–4 business days from dispatch. Some remote pincodes may have extended timelines — check at checkout.",
+        a: "Yes. Aam Native delivers to 500+ pincodes across India, including all major metros (Mumbai, Delhi, Bangalore, Chennai, Hyderabad, Pune, Kolkata) and Tier-2 cities. Delivery typically takes 2–4 business days from dispatch. We offer free shipping on orders above ₹999 to ₹10,000. Some remote pincodes may have extended timelines — check at checkout.",
       },
       {
         q: "What if my mangoes arrive damaged or unripe?",
