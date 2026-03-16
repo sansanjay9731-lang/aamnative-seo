@@ -1489,6 +1489,9 @@ export interface ComparisonPair {
     slug: string;
     variety1: keyof typeof varieties;
     variety2: keyof typeof varieties;
+    title: string;
+    metaTitle: string;
+    metaDescription: string;
     tasteDiff: string;
     aromaDiff: string;
     textureDiff: string;
@@ -1496,6 +1499,8 @@ export interface ComparisonPair {
     priceDiff: string;
     bestFor: { variety1: string; variety2: string };
     verdict: string;
+    comparisonPoints: { label: string; a: string; b: string }[];
+    faqs: { q: string; a: string }[];
 }
 
 export const comparisons: ComparisonPair[] = [
@@ -1503,147 +1508,305 @@ export const comparisons: ComparisonPair[] = [
         slug: "alphonso-vs-kesar",
         variety1: "alphonso",
         variety2: "kesar",
+        title: "Alphonso vs Kesar Mango: Which Is Better?",
+        metaTitle: "Alphonso vs Kesar Mango | Taste, Price & Nutrition Compared (2026)",
+        metaDescription: "Detailed comparison of Alphonso and Kesar mangoes. Compare taste, sweetness (Brix), price, season, origin, and nutritional value. Find out which mango is best for you.",
         tasteDiff: "Alphonso has a richer, more complex sweetness; Kesar has a balanced sweet-tangy profile perfect for aamras.",
         aromaDiff: "Alphonso's floral aroma is more intense and fills the room; Kesar has a distinctive saffron-like fragrance.",
         textureDiff: "Alphonso is buttery smooth with zero fiber; Kesar has slightly more body with minimal fiber.",
         seasonDiff: "Alphonso peaks March–June; Kesar runs Mid-April to July, giving you a longer mango season.",
         priceDiff: "Alphonso commands a premium (₹1,500–3,500/dozen) vs Kesar (₹800–1,800/dozen).",
         bestFor: { variety1: "Pure eating, gifting, premium celebrations", variety2: "Aamras, milkshakes, daily consumption" },
-        verdict: "Choose Alphonso for the ultimate luxury mango experience. Choose Kesar for excellent quality at a friendlier price point."
+        verdict: "Alphonso wins on aroma and sweetness intensity, Kesar wins on value and aamras texture. For premium gifting, choose Alphonso. For daily eating and recipes, Kesar is unbeatable.",
+        comparisonPoints: [
+            { label: "Origin", a: "Ratnagiri, Maharashtra", b: "Junagadh/Gir, Gujarat" },
+            { label: "Sweetness (Brix)", a: "18–22°", b: "16–19°" },
+            { label: "Season", a: "March–June", b: "April–July" },
+            { label: "Price Range", a: "₹1,500–₹3,500/doz", b: "₹800–₹1,800/doz" },
+            { label: "Texture", a: "Creamy, fiberless", b: "Smooth, slightly pulpy" },
+            { label: "Aroma", a: "Intense saffron-floral", b: "Sweet, mild fragrance" },
+            { label: "Best For", a: "Eating fresh, gifting", b: "Aamras, milkshakes, cooking" },
+            { label: "GI Certified", a: "Yes", b: "Yes" },
+        ],
+        faqs: [
+            { q: "Which is sweeter, Alphonso or Kesar?", a: "Alphonso is sweeter with Brix readings of 18–22° compared to Kesar's 16–19°. However, Kesar has a more balanced sweet-tangy profile that many people prefer in recipes." },
+            { q: "Why is Alphonso more expensive than Kesar?", a: "Alphonso commands a premium due to its limited growing region (Ratnagiri/Devgad), shorter harvest window, higher global demand, and GI-certified status. Kesar is more widely cultivated across Gujarat." },
+            { q: "Can I use Alphonso for aamras instead of Kesar?", a: "Yes, Alphonso makes excellent aamras. However, Kesar is traditionally preferred for aamras in Gujarat because its pulp-to-fiber ratio creates a thicker, smoother consistency." },
+        ],
     },
     {
         slug: "alphonso-vs-dasheri",
         variety1: "alphonso",
         variety2: "dasheri",
+        title: "Alphonso vs Dasheri Mango: Complete Comparison",
+        metaTitle: "Alphonso vs Dasheri Mango | Taste, Price & Season Compared (2026)",
+        metaDescription: "Alphonso vs Dasheri mango comparison. Compare sweetness, fiber, pricing, season dates, and which variety is best for eating vs cooking. Expert guide.",
         tasteDiff: "Alphonso is intensely sweet and complex; Dasheri is lighter and refreshingly sweet with no tang.",
         aromaDiff: "Alphonso has a strong tropical floral scent; Dasheri has a subtle, pleasant mango aroma.",
         textureDiff: "Alphonso is dense and buttery; Dasheri is thinner-skinned with delicate, fiberless pulp.",
         seasonDiff: "Alphonso arrives first (March–June); Dasheri follows in May–July.",
         priceDiff: "Alphonso is 2–3x the price of Dasheri.",
         bestFor: { variety1: "Premium gifting, pure indulgence", variety2: "Everyday eating, large family orders" },
-        verdict: "Alphonso is the king for a reason, but Dasheri offers exceptional fiberless sweetness at a fraction of the cost."
+        verdict: "Alphonso is the king for a reason, but Dasheri offers exceptional fiberless sweetness at a fraction of the cost.",
+        comparisonPoints: [
+            { label: "Origin", a: "Ratnagiri, Maharashtra", b: "Malihabad, Uttar Pradesh" },
+            { label: "Sweetness (Brix)", a: "18–22°", b: "14–18°" },
+            { label: "Season", a: "March–June", b: "May–July" },
+            { label: "Price Range", a: "₹1,500–₹3,500/doz", b: "₹600–₹1,400/doz" },
+            { label: "Texture", a: "Creamy, fiberless", b: "Smooth, fiberless, thin skin" },
+            { label: "Aroma", a: "Intense saffron-floral", b: "Sweet, mild honeyed" },
+            { label: "Best For", a: "Eating fresh, gifting", b: "Eating fresh, juice, desserts" },
+            { label: "Shelf Life", a: "3–5 days when ripe", b: "2–3 days when ripe" },
+        ],
+        faqs: [
+            { q: "Is Dasheri a good alternative to Alphonso?", a: "Dasheri is an excellent mango but has a different flavour profile. It's sweeter in a honeyed way vs Alphonso's saffron-floral complexity. For North Indian palates, Dasheri is often the preferred choice." },
+            { q: "Which mango has less fiber, Alphonso or Dasheri?", a: "Both are remarkably fiberless. Alphonso has a creamier, more buttery texture while Dasheri has a smooth, more liquid pulp." },
+        ],
     },
     {
         slug: "alphonso-vs-langra",
         variety1: "alphonso",
         variety2: "langra",
+        title: "Alphonso vs Langra Mango: Which Should You Buy?",
+        metaTitle: "Alphonso vs Langra Mango | Taste, Season & Price Compared (2026)",
+        metaDescription: "Compare Alphonso and Langra mangoes: sweetness, season timing, price, fiber content, and best uses. Find out which variety suits your taste.",
         tasteDiff: "Alphonso is refined and buttery; Langra is boldly sweet with a slight citrus undertone.",
         aromaDiff: "Alphonso's aroma is floral; Langra's is earthier and more rustic.",
         textureDiff: "Alphonso is smooth and fiber-free; Langra has slight fibrousness that adds character.",
         seasonDiff: "Alphonso (March–June) ends as Langra (June–August) begins — perfect succession.",
         priceDiff: "Alphonso is significantly more expensive than Langra.",
         bestFor: { variety1: "Early season indulgence, gifting", variety2: "Mid-summer eating, nostalgic North Indian flavour" },
-        verdict: "Start your season with Alphonso and transition to Langra — they're perfect seasonal companions."
+        verdict: "Start your season with Alphonso and transition to Langra — they're perfect seasonal companions.",
+        comparisonPoints: [
+            { label: "Origin", a: "Ratnagiri, Maharashtra", b: "Varanasi, Uttar Pradesh" },
+            { label: "Sweetness (Brix)", a: "18–22°", b: "16–21°" },
+            { label: "Season", a: "March–June", b: "June–August" },
+            { label: "Price Range", a: "₹1,500–₹3,500/doz", b: "₹500–₹1,200/doz" },
+            { label: "Texture", a: "Creamy, fiberless", b: "Juicy, slightly fibrous" },
+            { label: "Skin When Ripe", a: "Saffron-yellow", b: "Stays green" },
+            { label: "Best For", a: "Eating fresh, gifting", b: "Eating fresh, making juice" },
+            { label: "Fiber Content", a: "Near zero", b: "Moderate" },
+        ],
+        faqs: [
+            { q: "Does Langra stay green when ripe?", a: "Yes, Langra is unique in that its skin remains green even when fully ripe. Don't judge ripeness by color: press gently and smell for a sweet aroma instead." },
+            { q: "Can I get Alphonso and Langra in the same month?", a: "There is a brief overlap in June. Alphonso season ends around mid-June while Langra starts arriving from mid-June. You can enjoy both varieties during this overlap window." },
+        ],
     },
     {
         slug: "alphonso-vs-banganapalli",
         variety1: "alphonso",
         variety2: "banganapalli",
+        title: "Alphonso vs Banganapalli Mango: Head to Head",
+        metaTitle: "Alphonso vs Banganapalli (Safeda) Mango | Complete Comparison (2026)",
+        metaDescription: "Compare Alphonso and Banganapalli mangoes. Size, sweetness, price, fiber, and best uses compared. Find out which South Indian favourite wins.",
         tasteDiff: "Alphonso is intensely sweet and aromatic; Banganapalli is mildly sweet with a clean, straightforward flavour.",
         aromaDiff: "Alphonso has a strong perfume-like aroma; Banganapalli's aroma is subtle.",
         textureDiff: "Both are fiberless. Alphonso is creamier; Banganapalli is firmer with more bite.",
         seasonDiff: "Both overlap April–June; Banganapalli arrives slightly earlier in some regions.",
         priceDiff: "Alphonso costs 3–4x more than Banganapalli.",
         bestFor: { variety1: "Premium eating, special occasions", variety2: "Daily consumption, salads, smoothies" },
-        verdict: "Banganapalli is the best value fiberless mango in India. Alphonso is worth the splurge for celebrations."
+        verdict: "Banganapalli is the best value fiberless mango in India. Alphonso is worth the splurge for celebrations.",
+        comparisonPoints: [
+            { label: "Origin", a: "Ratnagiri, Maharashtra", b: "Banganapalle, Andhra Pradesh" },
+            { label: "Sweetness (Brix)", a: "18–22°", b: "15–18°" },
+            { label: "Season", a: "March–June", b: "April–June" },
+            { label: "Price Range", a: "₹1,500–₹3,500/doz", b: "₹400–₹1,000/doz" },
+            { label: "Size", a: "200–300g", b: "300–500g" },
+            { label: "Texture", a: "Creamy, fiberless", b: "Firm, fiberless, juicy" },
+            { label: "Skin", a: "Thin, delicate", b: "Smooth, spotless yellow" },
+            { label: "Best For", a: "Eating fresh, premium gifting", b: "Daily eating, juice, smoothies" },
+        ],
+        faqs: [
+            { q: "Is Banganapalli good for making mango juice?", a: "Excellent. Banganapalli's high juice content and firm texture make it ideal for juices, smoothies, and mango lassi. It's the most popular juice mango in South India." },
+            { q: "Which is bigger, Alphonso or Banganapalli?", a: "Banganapalli is significantly larger (300–500g vs 200–300g for Alphonso). You get more fruit per piece with Banganapalli." },
+        ],
     },
     {
         slug: "kesar-vs-dasheri",
         variety1: "kesar",
         variety2: "dasheri",
+        title: "Kesar vs Dasheri Mango: Gujarat vs UP",
+        metaTitle: "Kesar vs Dasheri Mango | Taste, Price & Nutrition Compared (2026)",
+        metaDescription: "Compare Kesar and Dasheri mangoes: sweetness, season, price, fiber, origin, and best uses. Find out whether Gujarat's Queen or UP's favourite wins.",
         tasteDiff: "Kesar has a rich, saffron-tinged sweetness; Dasheri is purely sweet with no tang.",
         aromaDiff: "Kesar's aroma is distinctive and saffron-like; Dasheri's is lighter and more floral.",
         textureDiff: "Kesar is medium-bodied with some fiber; Dasheri is silky and completely fiberless.",
         seasonDiff: "Kesar (Mid-April–July) and Dasheri (May–July) overlap significantly.",
         priceDiff: "Kesar is slightly more expensive than Dasheri.",
         bestFor: { variety1: "Aamras, Gujarati cuisine, juices", variety2: "Fresh eating, North Indian households" },
-        verdict: "Kesar wins for aamras and beverages; Dasheri wins for pure eating pleasure."
+        verdict: "Kesar wins on colour, aamras potential, and aroma. Dasheri wins on price and availability. Both are excellent mid-range choices.",
+        comparisonPoints: [
+            { label: "Origin", a: "Junagadh/Gir, Gujarat", b: "Malihabad, Uttar Pradesh" },
+            { label: "Sweetness (Brix)", a: "16–19°", b: "14–18°" },
+            { label: "Season", a: "April–July", b: "May–July" },
+            { label: "Price Range", a: "₹800–₹1,800/doz", b: "₹600–₹1,400/doz" },
+            { label: "Colour", a: "Deep saffron-orange", b: "Golden yellow" },
+            { label: "Texture", a: "Smooth, pulpy", b: "Smooth, thin-skinned" },
+            { label: "Best For", a: "Aamras, milkshakes", b: "Eating fresh, juice, desserts" },
+            { label: "Aroma", a: "Distinctive saffron note", b: "Sweet, honeyed" },
+        ],
+        faqs: [
+            { q: "Which is better for aamras, Kesar or Dasheri?", a: "Kesar is the traditional choice for aamras in Gujarat and Maharashtra. Its thick pulp and saffron colour make it the gold standard. Dasheri works for aamras too, but the consistency is thinner." },
+            { q: "Are both Kesar and Dasheri available in summer?", a: "Yes, they overlap from May to July. Kesar starts a bit earlier (April) while Dasheri peaks in June–July." },
+        ],
     },
     {
         slug: "kesar-vs-banganapalli",
         variety1: "kesar",
         variety2: "banganapalli",
+        title: "Kesar vs Banganapalli: Comparing India's Favorite Sweet Varieties",
+        metaTitle: "Kesar vs Banganapalli Mango Comparison | Which is Sweeter?",
+        metaDescription: "Explore the differences between Gir Kesar and Banganapalli mangoes. Compare their sweetness, aroma, and best culinary uses.",
         tasteDiff: "Kesar is sweeter and more aromatic; Banganapalli is milder and less complex.",
         aromaDiff: "Kesar has a strong saffron-like fragrance; Banganapalli's scent is subtle.",
         textureDiff: "Kesar has some fiber; Banganapalli is completely fiberless and firmer.",
         seasonDiff: "Banganapalli (April–June) starts earlier; Kesar (Mid-April–July) lasts longer.",
         priceDiff: "Kesar is about 2x the price of Banganapalli.",
         bestFor: { variety1: "Aamras, milkshakes, flavour-focused eating", variety2: "Daily eating, value orders, smoothies" },
-        verdict: "Choose Kesar for intense flavour, Banganapalli for everyday value and versatility."
+        verdict: "Choose Kesar for intense flavour, Banganapalli for everyday value and versatility.",
+        comparisonPoints: [
+            { label: "Origin", a: "Gujarat", b: "Andhra Pradesh" },
+            { label: "Sweetness", a: "Very High", b: "Moderate to High" },
+            { label: "Fiber", a: "Minimal", b: "Zero" },
+        ],
+        faqs: [
+            { q: "Is Kesar better than Banganapalli?", a: "Kesar is generally preferred for its intense flavor and aroma, while Banganapalli is favored for its large size and fiberless texture." }
+        ]
     },
     {
         slug: "dasheri-vs-langra",
         variety1: "dasheri",
         variety2: "langra",
+        title: "Dasheri vs Langra: The Battle of North Indian Legends",
+        metaTitle: "Dasheri vs Langra Mango Comparison | Taste and Texture Guide",
+        metaDescription: "Compare the legendary Dasheri and Langra mangoes of North India. Find out which one reigns supreme in sweetness and aroma.",
         tasteDiff: "Dasheri is delicately sweet; Langra is boldly sweet with a slight tartness.",
         aromaDiff: "Dasheri has a light, pleasant aroma; Langra has a deeper, earthier fragrance.",
         textureDiff: "Dasheri is fiberless and silky; Langra has mild fiber that gives it character.",
         seasonDiff: "Dasheri (May–July) overlaps with Langra (June–August) for about a month.",
         priceDiff: "Both are similarly priced; Langra is slightly cheaper in most markets.",
         bestFor: { variety1: "Those who prefer zero fiber and mild sweetness", variety2: "Those who love bold, intense mango flavour" },
-        verdict: "Two North Indian legends. Dasheri is refined; Langra is rustic and bold. Try both."
+        verdict: "Two North Indian legends. Dasheri is refined; Langra is rustic and bold. Try both.",
+        comparisonPoints: [
+            { label: "Origin", a: "Uttar Pradesh", b: "Uttar Pradesh/Bihar" },
+            { label: "Flavor Profile", a: "Sweet & Silky", b: "Bold & Zesty" },
+        ],
+        faqs: [
+            { q: "Which is more popular in North India, Dasheri or Langra?", a: "Both are equally iconic, with Dasheri being the early favorite and Langra being the mid-season king." }
+        ]
     },
     {
         slug: "himsagar-vs-alphonso",
         variety1: "himsagar",
         variety2: "alphonso",
+        title: "Himsagar vs Alphonso: Bengal's Gem vs The King",
+        metaTitle: "Himsagar vs Alphonso Mango Comparison | Premium Varieties Guide",
+        metaDescription: "A head-to-head comparison between West Bengal's Himsagar and Maharashtra's Alphonso. Discover which premium mango wins your heart.",
         tasteDiff: "Himsagar is exceptionally sweet with honey notes; Alphonso is complex with floral-tropical sweetness.",
         aromaDiff: "Himsagar's aroma is intoxicating and honey-like; Alphonso's is floral and perfume-like.",
         textureDiff: "Both are fiberless. Himsagar is juicier; Alphonso is denser and creamier.",
         seasonDiff: "Himsagar (May–June) has a very short window; Alphonso (March–June) lasts longer.",
         priceDiff: "Similar premium pricing, but Himsagar is rarer outside Bengal.",
         bestFor: { variety1: "East Indian mango lovers, sweetness purists", variety2: "All-India favourite, gifting, celebrations" },
-        verdict: "Himsagar is Bengal's answer to Alphonso — equally divine but harder to find outside the East."
+        verdict: "Himsagar is Bengal's answer to Alphonso — equally divine but harder to find outside the East.",
+        comparisonPoints: [
+            { label: "Origin", a: "West Bengal", b: "Maharashtra" },
+            { label: "Availability", a: "Very Limited", b: "Pan-India & Global" },
+        ],
+        faqs: [
+            { q: "Is Himsagar sweeter than Alphonso?", a: "Many consider Himsagar to have a purer, honey-like sweetness, while Alphonso has a more complex, multi-layered flavor profile." }
+        ]
     },
     {
         slug: "badami-vs-alphonso",
         variety1: "badami",
         variety2: "alphonso",
+        title: "Badami vs Alphonso: The Smart Man's Hapus Trial",
+        metaTitle: "Badami vs Alphonso Mango Comparison | Best Value Guide",
+        metaDescription: "Compare the 'Karnataka Alphonso' (Badami) with the original Ratnagiri Hapus. Is the price difference worth it?",
         tasteDiff: "Badami is sweet and rich, very similar to Alphonso but slightly less complex.",
         aromaDiff: "Badami's aroma closely resembles Alphonso but is a touch milder.",
         textureDiff: "Both are smooth and fiberless. Alphonso is marginally creamier.",
         seasonDiff: "Both share the April–June window.",
         priceDiff: "Badami costs about 40–60% of Alphonso's price — incredible value.",
         bestFor: { variety1: "Budget-conscious Alphonso lovers, South Indian markets", variety2: "Premium gifting, purists who want the original" },
-        verdict: "Badami is the smartest buy in Indian mangoes — 80% of Alphonso's quality at half the price."
+        verdict: "Badami is the smartest buy in Indian mangoes — 80% of Alphonso's quality at half the price.",
+        comparisonPoints: [
+            { label: "Price", a: "Economy/Mid-range", b: "Premium" },
+            { label: "Similarity", a: "Highly Similar", b: "The Original" },
+        ],
+        faqs: [
+            { q: "Can Badami be passed off as Alphonso?", a: "In external appearance, they look similar, but the aroma and depth of flavor in a true Ratnagiri Alphonso are unique and harder to replicate." }
+        ]
     },
     {
         slug: "imam-pasand-vs-alphonso",
         variety1: "imam-pasand",
         variety2: "alphonso",
+        title: "Imam Pasand vs Alphonso: A Royal Mango Debate",
+        metaTitle: "Imam Pasand vs Alphonso Mango Comparison | Luxury Varieties Guide",
+        metaDescription: "Dive into the comparison between two of India's most expensive and loved mango varieties: Imam Pasand and Alphonso.",
         tasteDiff: "Imam Pasand is richly sweet with a creamy depth; Alphonso is more nuanced with floral notes.",
         aromaDiff: "Imam Pasand has a deep, musky aroma; Alphonso is more floral and lighter.",
         textureDiff: "Imam Pasand is extremely creamy; Alphonso is smooth and buttery.",
         seasonDiff: "Imam Pasand (May–July) starts later than Alphonso (March–June).",
         priceDiff: "Imam Pasand is premium but about 20–30% cheaper than top Alphonso.",
         bestFor: { variety1: "Those who love creamy, rich mangoes", variety2: "Those who prefer floral, complex sweetness" },
-        verdict: "Two premium contenders. Imam Pasand is the richer, heavier mango; Alphonso is more elegant."
+        verdict: "Two premium contenders. Imam Pasand is the richer, heavier mango; Alphonso is more elegant.",
+        comparisonPoints: [
+            { label: "Status", a: "Cult Favorite", b: "Global Standard" },
+            { label: "Creaminess", a: "Very High", b: "High" },
+        ],
+        faqs: [
+            { q: "Why is Imam Pasand so rare?", a: "It has a lower yield and is primarily grown in specific pockets of Tamil Nadu and Andhra Pradesh, making it a seasonal treasure." }
+        ]
     },
     {
         slug: "chausa-vs-langra",
         variety1: "chausa",
         variety2: "langra",
+        title: "Chausa vs Langra: Sweetness vs Zest",
+        metaTitle: "Chausa vs Langra Mango Comparison | Late Season Guide",
+        metaDescription: "Compare the late-season superstars: Chausa and Langra. Which one should you pick for your year-end mango feast?",
         tasteDiff: "Chausa is honey-sweet and intensely sugary; Langra is bold with slight citrus notes.",
         aromaDiff: "Chausa has a deep, honey-like fragrance; Langra's aroma is earthier.",
         textureDiff: "Chausa is extremely juicy (best sucked); Langra has more body and slight fiber.",
         seasonDiff: "Langra (June–August) arrives first; Chausa (July–August) closes the season.",
         priceDiff: "Both are similarly priced in North Indian markets.",
         bestFor: { variety1: "Late season indulgence, sweetness lovers", variety2: "Mid-season eating, those who like bolder flavour" },
-        verdict: "Start with Langra in June, finish the season with Chausa in August — a perfect duo."
+        verdict: "Start with Langra in June, finish the season with Chausa in August — a perfect duo.",
+        comparisonPoints: [
+            { label: "SweetnessType", a: "Sugary Honey", b: "Tangy Sweet" },
+            { label: "Peak Month", a: "July/August", b: "June/July" },
+        ],
+        faqs: [
+            { q: "Which is the last mango of the season?", a: "Chausa is typically the variety that closes out the summer season in India." }
+        ]
     },
     {
         slug: "totapuri-vs-neelam",
         variety1: "totapuri",
         variety2: "neelam",
+        title: "Totapuri vs Neelam: Everyday Essentials compared",
+        metaTitle: "Totapuri vs Neelam Mango Comparison | Value Varieties Guide",
+        metaDescription: "Looking for budget-friendly mangoes? Compare Totapuri and Neelam for your daily needs and pickles.",
         tasteDiff: "Totapuri is tangy-sweet and firm; Neelam is sweeter with a pleasant mild flavour.",
         aromaDiff: "Totapuri has a mild, fresh scent; Neelam is more fragrant.",
         textureDiff: "Totapuri is firm and great for cutting; Neelam is softer and juicier.",
         seasonDiff: "Totapuri (April–July) starts earlier; Neelam (June–August) lasts longer.",
         priceDiff: "Both are the most affordable varieties, similarly priced.",
         bestFor: { variety1: "Pickles, chutneys, commercial use, cooking", variety2: "Everyday eating, juices, budget-friendly snacking" },
-        verdict: "Totapuri is the kitchen workhorse; Neelam is the everyday eating mango. Both are great value."
+        verdict: "Totapuri is the kitchen workhorse; Neelam is the everyday eating mango. Both are great value.",
+        comparisonPoints: [
+            { label: "Primary Use", a: "Cooking/Processing", b: "Eating/Juicing" },
+            { label: "Cost", a: "Highly Budget Friendly", b: "Budget Friendly" },
+        ],
+        faqs: [
+            { q: "Is Totapuri good for eating raw?", a: "Yes, if you enjoy a firm, tangy-sweet crunch with salt and chili, similar to Thai green mangoes." }
+        ]
     }
 ];
+
 
 export const comboPages = [
     // Alphonso - top 20 cities
