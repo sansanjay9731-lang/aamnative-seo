@@ -1,7 +1,7 @@
 import { MetadataRoute } from 'next';
 import { products } from '@/lib/products';
+import { deliveryCities, varieties, stateData, comparisons, comboPages } from '@/lib/seo-data';
 import { posts } from '@/lib/posts';
-import { varieties, deliveryCities, comparisons, getAllCombos } from '@/lib/seo-data';
 
 const BASE_URL = 'https://aamnative.com';
 
@@ -20,6 +20,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
         '/about-our-farms',
         '/cold-chain',
         '/buy-mangoes-online-india',
+        '/mango/alphonso',
     ].map((route) => ({
         url: `${BASE_URL}${route}`,
         lastModified: new Date().toISOString(),
@@ -36,39 +37,57 @@ export default function sitemap(): MetadataRoute.Sitemap {
 
     const blogRoutes = posts.map((post) => ({
         url: `${BASE_URL}/blog/${post.slug}`,
-        lastModified: post.date.includes('2026') ? new Date().toISOString() : new Date('2026-03-01').toISOString(),
-        changeFrequency: 'monthly' as const,
+        lastModified: new Date(post.date).toISOString(),
+        changeFrequency: 'yearly' as const,
         priority: 0.7,
     }));
 
-    const varietyRoutes = Object.values(varieties).map((v) => ({
-        url: `${BASE_URL}/mango/${v.slug}`,
-        lastModified: new Date().toISOString(),
-        changeFrequency: 'monthly' as const,
-        priority: 0.8,
-    }));
-
-    const cityRoutes = Object.values(deliveryCities).map((c) => ({
-        url: `${BASE_URL}/mango/delivery/${c.slug}`,
+    const cityRoutes = Object.values(deliveryCities).map((city) => ({
+        url: `${BASE_URL}/mango/delivery/${city.slug}`,
         lastModified: new Date().toISOString(),
         changeFrequency: 'monthly' as const,
         priority: 0.7,
     }));
 
-    const comboRoutes = getAllCombos().map((combo) => ({
-        url: `${BASE_URL}/mango/delivery/${combo.slug}`,
+    const varietyRoutes = Object.entries(varieties)
+        .filter(([key]) => key !== 'alphonso')
+        .map(([, variety]) => ({
+            url: `${BASE_URL}/mango/${variety.slug}`,
+            lastModified: new Date().toISOString(),
+            changeFrequency: 'monthly' as const,
+            priority: 0.7,
+        }));
+
+    const stateRoutes = Object.values(stateData).map((state) => ({
+        url: `${BASE_URL}/mango/delivery/state/${state.slug}`,
         lastModified: new Date().toISOString(),
         changeFrequency: 'monthly' as const,
         priority: 0.6,
     }));
 
-    const comparisonRoutes = comparisons.map((comp) => ({
-        url: `${BASE_URL}/blog/${comp.slug}`, // Assuming they live under /blog/ or similar
+    const comparisonRoutes = comparisons.map((c) => ({
+        url: `${BASE_URL}/mango/compare/${c.slug}`,
         lastModified: new Date().toISOString(),
         changeFrequency: 'monthly' as const,
         priority: 0.6,
     }));
 
-    // @ts-ignore
-    return [...staticRoutes, ...productRoutes, ...blogRoutes, ...varietyRoutes, ...cityRoutes, ...comboRoutes, ...comparisonRoutes];
+    const comboRoutes = comboPages.map((c) => ({
+        url: `${BASE_URL}/mango/${c.variety}/${c.city}`,
+        lastModified: new Date().toISOString(),
+        changeFrequency: 'monthly' as const,
+        priority: 0.6,
+    }));
+
+    return [
+        ...staticRoutes,
+        ...productRoutes,
+        ...blogRoutes,
+        ...cityRoutes,
+        ...varietyRoutes,
+        ...stateRoutes,
+        ...comparisonRoutes,
+        ...comboRoutes,
+    ];
+}
 }
