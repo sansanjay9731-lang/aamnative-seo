@@ -115,4 +115,4 @@ They are not genuine Alphonso. January mangoes sold as "Alphonso" are either mis
 ---
 
 **Don't miss the peak.**
-Pre-order your **Ratnagiri Alphonso Mangoes for the 2026 Season** from Aam Native — farm-direct, GI certified, naturally ripened. [Pre-Order Now at Aam Native](https://aamnative.com/shop).
+Pre-order your **Ratnagiri Alphonso Mangoes for the 2026 Season** from Aam Native — farm-direct, GI certified, naturally ripened. [Pre-Order Now at Aam Native](https://www.aamnative.com/shop).

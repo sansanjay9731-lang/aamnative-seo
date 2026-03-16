@@ -125,4 +125,4 @@ Washing with clean water removes surface residues to a significant degree. Some 
 ---
 
 **Your family deserves better.**
-Order **Carbide-Free Ratnagiri Alphonso Mangoes** from Aam Native — farm-direct, naturally ripened, delivered fresh. [Shop Now at Aam Native](https://aamnative.com/shop).
+Order **Carbide-Free Ratnagiri Alphonso Mangoes** from Aam Native — farm-direct, naturally ripened, delivered fresh. [Shop Now at Aam Native](https://www.aamnative.com/shop).

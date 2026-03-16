@@ -3,7 +3,7 @@ import { notFound } from "next/navigation";
 import { products } from "@/lib/products";
 import ProductDetailClient from "./ProductDetailClient";
 
-const BASE_URL = "https://aamnative.com";
+const BASE_URL = "https://www.aamnative.com";
 
 // Pre-generate all product routes at build time
 export function generateStaticParams() {

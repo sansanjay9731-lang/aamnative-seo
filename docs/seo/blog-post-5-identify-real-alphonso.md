@@ -151,4 +151,4 @@ Document your evidence — photograph the mangoes, note the smell and taste, and
 ---
 
 **Stop guessing. Start knowing.**
-Order **genuine GI Certified Ratnagiri Alphonso Mangoes** from Aam Native — verified origin, carbide-free, farm-direct. [Shop Now at Aam Native](https://aamnative.com/shop).
+Order **genuine GI Certified Ratnagiri Alphonso Mangoes** from Aam Native — verified origin, carbide-free, farm-direct. [Shop Now at Aam Native](https://www.aamnative.com/shop).

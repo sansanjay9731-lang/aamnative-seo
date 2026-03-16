@@ -4,7 +4,7 @@ import Link from "next/link";
 import { ArrowLeft, Truck, PackageCheck, Zap } from "lucide-react";
 import { deliveryCities, getAllCombos, varieties } from "@/lib/seo-data";
 
-const BASE_URL = "https://aamnative.com";
+const BASE_URL = "https://www.aamnative.com";
 
 export function generateStaticParams() {
     const cityParams = Object.keys(deliveryCities).map((city) => ({ city }));

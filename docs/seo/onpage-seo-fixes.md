@@ -120,8 +120,8 @@ Available April–June. ₹549 | Free delivery above ₹999.
   "name": "Ratnagiri Alphonso Mango 1kg Box — GI-Certified",
   "description": "Farm-fresh GI-certified Ratnagiri Alphonso mangoes (Hapus) sourced directly from Konkan orchards in Ratnagiri district, Maharashtra. Available April to June. Delivered pan-India.",
   "image": [
-    "https://aamnative.com/images/ratnagiri-alphonso-mango-1kg-box.webp",
-    "https://aamnative.com/images/ratnagiri-alphonso-mango-closeup.webp"
+    "https://www.aamnative.com/images/ratnagiri-alphonso-mango-1kg-box.webp",
+    "https://www.aamnative.com/images/ratnagiri-alphonso-mango-closeup.webp"
   ],
   "sku": "AAM-RAT-ALP-1KG",
   "brand": {
@@ -130,7 +130,7 @@ Available April–June. ₹549 | Free delivery above ₹999.
   },
   "offers": {
     "@type": "Offer",
-    "url": "https://aamnative.com/product/ratnagiri-alphonso-mango-1kg-box",
+    "url": "https://www.aamnative.com/product/ratnagiri-alphonso-mango-1kg-box",
     "priceCurrency": "INR",
     "price": "549",
     "priceValidUntil": "2026-06-30",
@@ -374,7 +374,7 @@ Disallow: /
 User-agent: Googlebot-Image
 Allow: /images/
 
-Sitemap: https://aamnative.com/sitemap.xml
+Sitemap: https://www.aamnative.com/sitemap.xml
 ```
 
 ---
@@ -386,19 +386,19 @@ Sitemap: https://aamnative.com/sitemap.xml
 <?xml version="1.0" encoding="UTF-8"?>
 <sitemapindex xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <sitemap>
-    <loc>https://aamnative.com/sitemap-pages.xml</loc>
+    <loc>https://www.aamnative.com/sitemap-pages.xml</loc>
     <lastmod>2026-03-01</lastmod>
   </sitemap>
   <sitemap>
-    <loc>https://aamnative.com/sitemap-products.xml</loc>
+    <loc>https://www.aamnative.com/sitemap-products.xml</loc>
     <lastmod>2026-03-01</lastmod>
   </sitemap>
   <sitemap>
-    <loc>https://aamnative.com/sitemap-blog.xml</loc>
+    <loc>https://www.aamnative.com/sitemap-blog.xml</loc>
     <lastmod>2026-03-01</lastmod>
   </sitemap>
   <sitemap>
-    <loc>https://aamnative.com/sitemap-images.xml</loc>
+    <loc>https://www.aamnative.com/sitemap-images.xml</loc>
     <lastmod>2026-03-01</lastmod>
   </sitemap>
 </sitemapindex>

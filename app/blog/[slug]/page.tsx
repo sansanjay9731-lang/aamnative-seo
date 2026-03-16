@@ -6,7 +6,7 @@ import { ArrowLeft, CheckCircle2, Scale, Info, HelpCircle } from "lucide-react";
 import { posts } from "@/lib/posts";
 import { comparisons } from "@/lib/seo-data";
 
-const BASE_URL = "https://aamnative.com";
+const BASE_URL = "https://www.aamnative.com";
 
 export function generateStaticParams() {
     const postParams = posts.map((p) => ({ slug: p.slug }));

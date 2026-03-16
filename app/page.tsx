@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import HomeClient from "@/components/HomeClient";
 
-const BASE_URL = "https://aamnative.com";
+const BASE_URL = "https://www.aamnative.com";
 
 export const metadata: Metadata = {
   alternates: {

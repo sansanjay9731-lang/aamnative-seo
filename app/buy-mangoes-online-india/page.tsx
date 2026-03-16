@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { CheckCircle2, ShieldCheck, Truck, ArrowRight } from "lucide-react";
 
-const BASE_URL = "https://aamnative.com";
+const BASE_URL = "https://www.aamnative.com";
 
 export const metadata: Metadata = {
     title: "Buy Mangoes Online in India | GI Certified Farm Direct | Aam Native",

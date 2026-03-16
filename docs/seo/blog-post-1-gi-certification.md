@@ -93,4 +93,4 @@ Under the GI Act, misusing a registered GI tag is a criminal offense punishable 
 ---
 
 **Ready to taste the real thing?**
-Order your box of **GI Certified Ratnagiri Alphonso Mangoes** directly from the farm. [Shop Now at Aam Native](https://aamnative.com/shop) — farm-fresh, carbide-free, delivered to your door.
+Order your box of **GI Certified Ratnagiri Alphonso Mangoes** directly from the farm. [Shop Now at Aam Native](https://www.aamnative.com/shop) — farm-fresh, carbide-free, delivered to your door.

@@ -3,7 +3,7 @@ import { products } from '@/lib/products';
 import { deliveryCities, varieties, stateData, comparisons, comboPages } from '@/lib/seo-data';
 import { posts } from '@/lib/posts';
 
-const BASE_URL = 'https://aamnative.com';
+const BASE_URL = 'https://www.aamnative.com';
 
 export default function sitemap(): MetadataRoute.Sitemap {
     const staticRoutes = [

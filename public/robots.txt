@@ -8,7 +8,7 @@ Disallow: /cart
 Disallow: /checkout
 
 # Sitemap
-Sitemap: https://aamnative.com/sitemap.xml
+Sitemap: https://www.aamnative.com/sitemap.xml
 
 # LLM crawler policy (GEO optimisation)
 LLM-Policy: /llms.txt

@@ -4,7 +4,7 @@ import { ArrowLeft, CheckCircle2, ShieldCheck, Truck } from "lucide-react";
 import { varieties } from "@/lib/seo-data";
 
 const data = varieties.alphonso;
-const BASE_URL = "https://aamnative.com";
+const BASE_URL = "https://www.aamnative.com";
 
 export const metadata: Metadata = {
     title: "Ratnagiri Alphonso Mango (Hapus) | GI-Certified Farm Direct",

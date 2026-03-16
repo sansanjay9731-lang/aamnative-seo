@@ -4,7 +4,7 @@ import Link from "next/link";
 import { ArrowLeft, Scale } from "lucide-react";
 import { comparisons, varieties } from "@/lib/seo-data";
 
-const BASE_URL = "https://aamnative.com";
+const BASE_URL = "https://www.aamnative.com";
 
 export function generateStaticParams() {
     return comparisons.map((c) => ({ slug: c.slug }));

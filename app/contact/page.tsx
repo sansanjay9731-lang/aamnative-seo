@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import ContactClient from "./ContactClient";
 
-const BASE_URL = "https://aamnative.com";
+const BASE_URL = "https://www.aamnative.com";
 
 export const metadata: Metadata = {
   title: "Contact Aam Native — Order Ratnagiri Alphonso Mangoes",

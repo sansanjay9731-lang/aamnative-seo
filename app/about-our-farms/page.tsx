@@ -5,7 +5,7 @@ import { ArrowLeft, MapPin, Trees, TestTube } from "lucide-react";
 export const metadata: Metadata = {
     title: "About Our Ratnagiri Farms | Exact Origin Data | Aam Native",
     description: "Transparency matters. View the exact GPS coordinates, soil data (laterite composition), and tree ages of the Aam Native GI-certified Alphonso orchards.",
-    alternates: { canonical: "https://aamnative.com/about-our-farms" },
+    alternates: { canonical: "https://www.aamnative.com/about-our-farms" },
 };
 
 export default function AboutOurFarmsPage() {

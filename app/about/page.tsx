@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import AboutClient from "./AboutClient";
 
-const BASE_URL = "https://aamnative.com";
+const BASE_URL = "https://www.aamnative.com";
 
 export const metadata: Metadata = {
   title: "About Aam Native — GI-Certified Ratnagiri Alphonso Mango Farm",

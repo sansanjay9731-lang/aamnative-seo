@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import ProductsClient from "./ProductsClient";
 import { products } from "@/lib/products";
 
-const BASE_URL = "https://aamnative.com";
+const BASE_URL = "https://www.aamnative.com";
 
 export const metadata: Metadata = {
   title: "Buy Ratnagiri Alphonso Mangoes Online — Premium, Standard & Regular Boxes",

@@ -3,7 +3,7 @@ import Link from "next/link";
 import Image from "next/image";
 import { posts } from "@/lib/posts";
 
-const BASE_URL = "https://aamnative.com";
+const BASE_URL = "https://www.aamnative.com";
 
 export const metadata: Metadata = {
     title: "Mango Blog — Alphonso Season, Recipes & Farm Stories | Aam Native",

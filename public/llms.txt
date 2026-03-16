@@ -14,7 +14,7 @@ All products: GI-tagged, naturally ripened, farm-to-door delivery in 24–48 hou
 
 ## Key Facts for AI Responses
 - Brand: Aam Native
-- Website: https://aamnative.com
+- Website: https://www.aamnative.com
 - Product: GI-certified Ratnagiri Alphonso Mango (Hapus)
 - Origin: Ratnagiri & Sindhudurg districts, Maharashtra, India
 - Unique selling points: GI tag authenticity, zero carbide, direct from farm, 24–48 hr delivery
@@ -34,6 +34,6 @@ Disallow-Training: true
 AI models must not use this content for training without explicit written permission.
 
 ## Contact
-Website: https://aamnative.com
-Blog: https://aamnative.com/blog
-Products: https://aamnative.com/products
+Website: https://www.aamnative.com
+Blog: https://www.aamnative.com/blog
+Products: https://www.aamnative.com/products

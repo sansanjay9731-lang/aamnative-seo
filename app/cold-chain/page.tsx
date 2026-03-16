@@ -5,7 +5,7 @@ import { ArrowLeft, ThermometerSnowflake, Package, Plane } from "lucide-react";
 export const metadata: Metadata = {
     title: "Cold Chain Logistics | Farm to Doorstep Delivery | Aam Native",
     description: "Learn how we safely pack and transport delicate, tree-ripened Alphonso mangoes across India using our specialized cold chain and ventilated packaging systems.",
-    alternates: { canonical: "https://aamnative.com/cold-chain" },
+    alternates: { canonical: "https://www.aamnative.com/cold-chain" },
 };
 
 export default function ColdChainPage() {

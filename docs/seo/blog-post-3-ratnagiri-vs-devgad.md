@@ -108,4 +108,4 @@ Not from Aam Native currently — we maintain single-origin sourcing. However, m
 ---
 
 **Experience the gold standard.**
-Order **GI Certified Ratnagiri Alphonso Mangoes** from Aam Native — farm-direct, carbide-free, delivered at the peak of the season. [Shop Now at Aam Native](https://aamnative.com/shop).
+Order **GI Certified Ratnagiri Alphonso Mangoes** from Aam Native — farm-direct, carbide-free, delivered at the peak of the season. [Shop Now at Aam Native](https://www.aamnative.com/shop).

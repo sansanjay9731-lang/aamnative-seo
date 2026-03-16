@@ -4,7 +4,7 @@ import Link from "next/link";
 import { ArrowLeft, Truck, Leaf, Sun } from "lucide-react";
 import { comboPages, varieties, deliveryCities } from "@/lib/seo-data";
 
-const BASE_URL = "https://aamnative.com";
+const BASE_URL = "https://www.aamnative.com";
 
 export function generateStaticParams() {
     return comboPages.map((c) => ({ variety: c.variety, city: c.city }));

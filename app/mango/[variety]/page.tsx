@@ -4,7 +4,7 @@ import Link from "next/link";
 import { ArrowLeft, CheckCircle2, Leaf, Sun } from "lucide-react";
 import { varieties } from "@/lib/seo-data";
 
-const BASE_URL = "https://aamnative.com";
+const BASE_URL = "https://www.aamnative.com";
 
 export function generateStaticParams() {
     return Object.keys(varieties)

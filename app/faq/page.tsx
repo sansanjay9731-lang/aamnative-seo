@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import FAQClient from "./FAQClient";
 
-const BASE_URL = "https://aamnative.com";
+const BASE_URL = "https://www.aamnative.com";
 
 export const metadata: Metadata = {
   title: "FAQ — Ratnagiri Alphonso Mango Questions Answered | Aam Native",
