@@ -24,7 +24,7 @@ export default function ShippingPolicyPage() {
                 <p style={p}>Once your order is dispatched, you will receive a tracking link via SMS and WhatsApp. You can also track your order on our <a href="/track-order" style={{ color: "var(--saffron)" }}>Track My Order</a> page.</p>
 
                 <h2 style={h2}>Delivery Issues</h2>
-                <p style={p}>If your order is delayed beyond the expected delivery window, please contact us immediately at +91 98765 43210 or WhatsApp us. We will investigate and provide a resolution within 24 hours.</p>
+                <p style={p}>If your order is delayed beyond the expected delivery window, please contact us immediately at +91 99649 84695 or WhatsApp us. We will investigate and provide a resolution within 24 hours.</p>
             </div>
         </div>
     );

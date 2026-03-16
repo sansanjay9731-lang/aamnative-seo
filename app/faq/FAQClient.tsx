@@ -157,7 +157,7 @@ export default function FAQClient({ faqs }: { faqs: FAQCategory[] }) {
           </p>
           <div style={{ display: "flex", gap: "0.75rem", justifyContent: "center", flexWrap: "wrap" }}>
             <a
-              href="https://wa.me/919876543210"
+              href="https://wa.me/919964984695"
               target="_blank"
               rel="noopener noreferrer"
               style={{

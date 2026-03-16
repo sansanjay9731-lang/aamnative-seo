@@ -106,7 +106,7 @@ const faqs = [
       },
       {
         q: "Can I order in bulk or for corporate gifting?",
-        a: "Yes. Aam Native offers bulk orders and branded corporate gifting boxes with custom packaging and personalized notes. Minimum bulk order is 5 boxes. Contact us via WhatsApp at +91 98765 43210 or email hello@aamnative.com for bulk pricing and custom branding options.",
+        a: "Yes. Aam Native offers bulk orders and branded corporate gifting boxes with custom packaging and personalized notes. Minimum bulk order is 5 boxes. Contact us via WhatsApp at +91 99649 84695 or email hello@aamnative.com for bulk pricing and custom branding options.",
       },
     ],
   },

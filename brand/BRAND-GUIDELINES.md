@@ -212,7 +212,7 @@ Fraunces: 300, 600, 700, 800 (optical size 9–144)
 | Instagram | @aamnative |
 | Facebook | /aamnative |
 | Twitter/X | @aamnative |
-| WhatsApp | +91 98765 43210 |
+| WhatsApp | +91 99649 84695 |
 | Website | aamnative.com |
 
 ---

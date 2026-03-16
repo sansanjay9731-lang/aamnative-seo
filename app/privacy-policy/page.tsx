@@ -24,7 +24,7 @@ export default function PrivacyPolicyPage() {
                 <p style={p}>We use industry-standard SSL encryption for all transactions. Your payment information is processed through Razorpay and we never store your card details on our servers.</p>
 
                 <h2 style={h2}>Your Rights</h2>
-                <p style={p}>You can request to view, update, or delete your personal data at any time by contacting us at hello@aamnative.com or calling +91 98765 43210.</p>
+                <p style={p}>You can request to view, update, or delete your personal data at any time by contacting us at hello@aamnative.com or calling +91 99649 84695.</p>
 
                 <h2 style={h2}>Contact</h2>
                 <p style={p}>For privacy-related questions, contact us at <a href="mailto:hello@aamnative.com" style={{ color: "var(--saffron)" }}>hello@aamnative.com</a>.</p>

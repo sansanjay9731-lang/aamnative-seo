@@ -14,9 +14,9 @@ export default function ReturnRefundPolicyPage() {
                 <h2 style={h2}>How to Report an Issue</h2>
                 <p style={p}>Contact us within 24 hours of delivery with clear photos of the damaged mangos and your order ID. You can reach us via:</p>
                 <ul style={{ ...p, paddingLeft: "1.25rem", listStyleType: "disc" }}>
-                    <li>WhatsApp: +91 98765 43210</li>
+                    <li>WhatsApp: +91 99649 84695</li>
                     <li>Email: hello@aamnative.com</li>
-                    <li>Phone: +91 98765 43210</li>
+                    <li>Phone: +91 99649 84695</li>
                 </ul>
 
                 <h2 style={h2}>Refund Process</h2>
