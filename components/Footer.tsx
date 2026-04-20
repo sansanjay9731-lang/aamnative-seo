@@ -61,7 +61,7 @@ export default function Footer() {
       `}</style>
 
             <div className="container" style={{ padding: "3.5rem 1.25rem 2rem" }}>
-                <div style={{ display: "grid", gap: "2.5rem", gridTemplateColumns: "1fr" }} className="md:grid-cols-5">
+                <div style={{ display: "grid", gap: "2.5rem", gridTemplateColumns: "1fr" }} className="md:grid-cols-6">
 
                     {/* Brand */}
                     <div>
@@ -109,6 +109,23 @@ export default function Footer() {
                         <ul style={{ listStyle: "none", display: "flex", flexDirection: "column", gap: "0.625rem" }}>
                             {policyLinks.map(l => (
                                 <li key={l.label}><Link href={l.href} className="ft-link">{l.label}</Link></li>
+                            ))}
+                        </ul>
+                    </div>
+
+                    {/* Deliveries */}
+                    <div>
+                        <p style={{ color: "var(--saffron, #E8720C)", fontSize: "0.6rem", fontWeight: 700, letterSpacing: "0.2em", textTransform: "uppercase", marginBottom: "1rem" }}>deliveries</p>
+                        <ul style={{ listStyle: "none", display: "flex", flexDirection: "column", gap: "0.625rem" }}>
+                            {[
+                                { href: "/mango/delivery/mumbai", label: "mumbai" },
+                                { href: "/mango/delivery/delhi", label: "delhi ncr" },
+                                { href: "/mango/delivery/bangalore", label: "bangalore" },
+                                { href: "/mango/delivery/pune", label: "pune" },
+                                { href: "/mango/delivery/hyderabad", label: "hyderabad" },
+                                { href: "/mango/delivery/chennai", label: "chennai" },
+                            ].map(l => (
+                                <li key={l.href}><Link href={l.href} className="ft-link">{l.label}</Link></li>
                             ))}
                         </ul>
                     </div>
