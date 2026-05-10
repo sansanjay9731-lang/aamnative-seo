@@ -82,7 +82,7 @@ export const metadata: Metadata = {
       "en-IN": BASE_URL,
     },
   },
-  verification: { google: "YOUR_GOOGLE_SEARCH_CONSOLE_TOKEN" },
+  verification: { google: "_zpA_WfXByuJ8gZggLNmNiYdXMgJMqdegOzgrnOWOfk" },
 };
 
 // ── Structured Data ──
